@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour
     public float health;
     public float moveSpeed;
     public int currencyOnDeath;
+    public GameObject floatingTextPrefab;
+
+    //public UIManager uiManager;
 
     [Header("Setup")]
     public Transform[] waypoints;
@@ -54,6 +57,9 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        UIManager.Instance.AddFuel(damage);
+        if (damage > 1.0f)
+            ShowFloatingText("-" + damage.ToString());
         if (health <= 0)
         {
             Die();
@@ -66,6 +72,18 @@ public class Enemy : MonoBehaviour
         // Tell the WaveSpawner that this enemy has died so it can track wave progress
         WaveSpawner.instance.OnEnemyDied();
         Destroy(gameObject);
+    }
+    void ShowFloatingText(string text)
+    {
+        if (floatingTextPrefab)
+        {
+            // Spawn above enemy
+            Vector3 spawnPos = transform.position + new Vector3(0, 2f, 0);
+            GameObject ft = Instantiate(floatingTextPrefab, spawnPos, Quaternion.identity);
+
+            // Initialize
+            ft.GetComponent<FloatingText>().Initialize(text, Color.red);
+        }
     }
 }
 

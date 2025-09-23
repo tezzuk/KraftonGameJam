@@ -108,6 +108,7 @@ MonoBehaviour:
   health: 10
   moveSpeed: 2.18
   currencyOnDeath: 0
+  floatingTextPrefab: {fileID: 5779499175731333011, guid: b03e4b14b6cf3e749948d81418ccebe1, type: 3}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}

@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public bool canBuildDuringWave = false;
     public int midWaveBuildLimit = 1;
     public int midWaveBuildsUsed { get; private set; }
+    public UIManager uiManager;
 
     void Awake()
     {
@@ -82,6 +83,7 @@ public class GameManager : MonoBehaviour
         currentState = GameState.BuildPhase;
         rewindsAvailable = rewindsPerWave;
         waveTimer = buildPhaseTime; 
+        uiManager.resetTimer();
     }
     
     public void EnemyReachedCrystal()
