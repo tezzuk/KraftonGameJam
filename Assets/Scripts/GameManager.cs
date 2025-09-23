@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public GameState currentState { get; private set; }
 
     [Header("Setup")]
-    public WaveSpawner waveSpawner; // A direct reference to the new wave spawner
+    public WaveSpawner waveSpawner;
 
     [Header("Crystal Health")]
     public int crystalHealth = 10;
@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
     public float buildPhaseTime = 30f; 
     private float waveTimer;
     
-    // --- Other variables for perks and rewinds ---
     [Header("Rewind Settings")]
     public int rewindsPerWave = 1;
     private int rewindsAvailable;
@@ -64,18 +63,17 @@ public class GameManager : MonoBehaviour
         {
             currentState = GameState.WaveInProgress;
             midWaveBuildsUsed = 0;
-            Debug.Log("Wave Started!");
-            // Directly tell the new spawner to start the next wave
             waveSpawner.StartNextWave();
         }
     }
 
     /// <summary>
-    /// This is called by the WaveSpawner when all enemies in a wave are defeated.
+    /// Called by the WaveSpawner when all enemies in a wave are defeated.
     /// </summary>
     public void WaveCompleted()
     {
-        Debug.Log("Wave Completed! Returning to Build Phase.");
+        // --- NEW DEBUG LOG ---
+        Debug.Log("GameManager has been notified that the wave is complete. Starting next build phase timer.");
         EnterBuildPhase();
     }
 
@@ -94,7 +92,6 @@ public class GameManager : MonoBehaviour
         {
             GameOver();
         }
-        // An enemy reaching the end still counts as one less enemy for the wave.
         WaveSpawner.instance.OnEnemyDied();
     }
 
@@ -102,10 +99,8 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.GameOver;
         Debug.Log("GAME OVER!");
-        Time.timeScale = 0; // Pauses the game
+        Time.timeScale = 0;
     }
-
-    // --- Other Helper Methods ---
 
     public void AddCurrency(int amount)
     {

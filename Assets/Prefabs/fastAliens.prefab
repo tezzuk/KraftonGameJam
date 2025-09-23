@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8234117997829390291}
   m_Layer: 8
   m_Name: fastAliens
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,12 @@ MonoBehaviour:
   health: 0
   moveSpeed: 0
   currencyOnDeath: 0
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!61 &4873263718654632326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -163,7 +168,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4931856821903555792}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

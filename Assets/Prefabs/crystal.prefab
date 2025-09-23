@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 919829724381387822}
   m_Layer: 6
   m_Name: crystal
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,19 +105,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   innerRegionRadius: 8.17
-  midRegionRadius: 15.3
+  midRegionRadius: 20
   midRegionPenaltyCost: 25
   outerRegionPenaltyCost: 50
   midRegionTimePenalty: 0.6
   outerRegionTimePenalty: 0.8
   baseRewindCastTime: 0.3
-  maxTurretConnections: 4
+  maxTurretConnections: 1
   maxMortarConnections: 1
   maxFlamethrowerConnections: 1
   connectedTurrets: []
   connectedMortars: []
   connectedFlamethrowers: []
-  threadPrefab: {fileID: 4365029200601759985, guid: dfbf51f7ea615c84392f01c2f0ec876c, type: 3}
+  threadPrefab: {fileID: 7484582094789976677, guid: e2824ee43959bcc43b160852cd3fd7fc, type: 3}
 --- !u!61 &919829724381387822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,7 +148,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
