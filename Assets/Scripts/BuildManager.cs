@@ -3,12 +3,12 @@ using UnityEngine.InputSystem;
 
 public class BuildManager : MonoBehaviour
 {
-    // Singleton pattern
     public static BuildManager instance;
 
     [Header("Setup")]
     public LayerMask invalidPlacementLayer;
-    public LayerMask clickableLayer; // This layer is for all clickable objects (Towers, Crystal)
+    public LayerMask clickableLayer;
+    public GameObject rangePreviewPrefab;
 
     // State variables
     private TowerData selectedTower;
@@ -43,82 +43,6 @@ public class BuildManager : MonoBehaviour
             CheckForRepositionStart();
         }
     }
-    
-    void CheckForRepositionStart()
-    {
-        // Add a check to ensure both keyboard and mouse are present
-        if (Keyboard.current == null || Mouse.current == null) return;
-
-        // --- UPDATED LOGIC: Only check for a right mouse click ---
-        if (Mouse.current.rightButton.wasPressedThisFrame)
-        {
-            Debug.Log("INPUT SUCCESS: Right Click detected. Raycasting for tower to reposition...");
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, clickableLayer);
-
-            if (hit.collider != null)
-            {
-                Debug.Log("RAYCAST SUCCESS: Hit object '" + hit.collider.name + "'. Checking if it's a tower...");
-                if (hit.collider.GetComponent<Turret>() != null || hit.collider.GetComponent<Mortar>() != null)
-                {
-                    Debug.Log("OBJECT IDENTIFIED: It's a tower. Starting reposition.");
-                    StartRepositioning(hit.collider.gameObject);
-                }
-                else
-                {
-                    Debug.Log("OBJECT IS NOT A TOWER. Reposition cancelled.");
-                }
-            }
-            else
-            {
-                Debug.Log("RAYCAST FAILED: No object with a collider was found on the 'Clickable' layer.");
-            }
-        }
-    }
-
-    void StartRepositioning(GameObject tower)
-    {
-        towerToReposition = tower;
-        previewSpriteRenderer = towerToReposition.GetComponentInChildren<SpriteRenderer>();
-
-        if (tower.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
-        if (tower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
-        RangeDetector detector = tower.GetComponentInChildren<RangeDetector>();
-        if (detector != null) detector.enabled = false;
-
-        Debug.Log("Repositioning " + tower.name);
-    }
-
-    void HandleRepositioning()
-    {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        mousePosition.z = 0;
-        towerToReposition.transform.position = mousePosition;
-
-        bool canPlace = IsValidPlacement(mousePosition);
-        previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
-        
-        // --- FIXED INPUT ---
-        // Now uses the new Input System for consistency.
-        if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            FinalizeRepositioning();
-        }
-    }
-
-    void FinalizeRepositioning()
-    {
-        if (towerToReposition.TryGetComponent<Turret>(out Turret turret)) turret.enabled = true;
-        if (towerToReposition.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = true;
-        RangeDetector detector = towerToReposition.GetComponentInChildren<RangeDetector>();
-        if (detector != null) detector.enabled = true;
-
-        previewSpriteRenderer.color = Color.white;
-        Debug.Log(towerToReposition.name + " has been repositioned.");
-
-        towerToReposition = null;
-        previewSpriteRenderer = null;
-    }
 
     public void SelectTowerToBuild(TowerData tower)
     {
@@ -133,11 +57,88 @@ public class BuildManager : MonoBehaviour
         selectedTower = tower;
         towerPreviewInstance = Instantiate(selectedTower.towerPrefab);
         previewSpriteRenderer = towerPreviewInstance.GetComponentInChildren<SpriteRenderer>();
+        CreateRangePreview(tower.range, towerPreviewInstance.transform);
 
+        // Disable all possible tower scripts on the preview
         if (towerPreviewInstance.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
         if (towerPreviewInstance.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
+        if (towerPreviewInstance.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
         RangeDetector detector = towerPreviewInstance.GetComponentInChildren<RangeDetector>();
         if (detector != null) detector.enabled = false;
+    }
+
+    void CheckForRepositionStart()
+    {
+        if (Mouse.current == null) return;
+
+        if (Mouse.current.rightButton.wasPressedThisFrame)
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, clickableLayer);
+
+            if (hit.collider != null)
+            {
+                TowerData data = null;
+                // Check for all tower types to get their data asset
+                if (hit.collider.TryGetComponent<Turret>(out Turret turret)) data = turret.towerData;
+                if (hit.collider.TryGetComponent<Mortar>(out Mortar mortar)) data = mortar.towerData;
+                if (hit.collider.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) data = flamethrower.towerData;
+
+                if (data != null)
+                {
+                    StartRepositioning(hit.collider.gameObject, data.range);
+                }
+            }
+        }
+    }
+
+    void StartRepositioning(GameObject tower, float range)
+    {
+        towerToReposition = tower;
+        previewSpriteRenderer = towerToReposition.GetComponentInChildren<SpriteRenderer>();
+        CreateRangePreview(range, towerToReposition.transform);
+        
+        if (tower.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
+        if (tower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
+        if (tower.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
+        RangeDetector detector = tower.GetComponentInChildren<RangeDetector>();
+        if (detector != null) detector.enabled = false;
+    }
+
+    void HandleRepositioning()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        mousePosition.z = 0;
+        towerToReposition.transform.position = mousePosition;
+        bool canPlace = IsValidPlacement(mousePosition);
+        previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
+
+        if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            FinalizeRepositioning();
+        }
+    }
+
+    void FinalizeRepositioning()
+    {
+        if (towerToReposition.transform.childCount > 0)
+        {
+           foreach (Transform child in towerToReposition.transform) {
+               if(child.name.Contains("RangeIndicator")){
+                   Destroy(child.gameObject);
+               }
+           }
+        }
+        
+        if (towerToReposition.TryGetComponent<Turret>(out Turret turret)) turret.enabled = true;
+        if (towerToReposition.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = true;
+        if (towerToReposition.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = true;
+        RangeDetector detector = towerToReposition.GetComponentInChildren<RangeDetector>();
+        if (detector != null) detector.enabled = true;
+
+        previewSpriteRenderer.color = Color.white;
+        towerToReposition = null;
+        previewSpriteRenderer = null;
     }
 
     void HandleNewTowerPlacement()
@@ -145,12 +146,9 @@ public class BuildManager : MonoBehaviour
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mousePosition.z = 0;
         towerPreviewInstance.transform.position = mousePosition;
-
         bool canPlace = IsValidPlacement(mousePosition);
         previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
-        
-        // --- FIXED INPUT ---
-        // Now uses the new Input System for consistency.
+
         if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
         {
             PlaceTower(towerPreviewInstance.transform.position);
@@ -160,12 +158,29 @@ public class BuildManager : MonoBehaviour
     void PlaceTower(Vector3 position)
     {
         GameManager.instance.SpendCurrency(selectedTower.buildCost);
-        Instantiate(selectedTower.towerPrefab, position, Quaternion.identity);
+        Destroy(towerPreviewInstance);
+        
+        GameObject newTower = Instantiate(selectedTower.towerPrefab, position, Quaternion.identity);
+        // Pass the TowerData asset to the newly created tower
+        if (newTower.TryGetComponent<Turret>(out Turret turret)) turret.towerData = selectedTower;
+        if (newTower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.towerData = selectedTower;
+        if (newTower.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.towerData = selectedTower;
         
         CancelActions();
-        Debug.Log("Tower Placed!");
     }
 
+    void CreateRangePreview(float range, Transform parent)
+    {
+        if (rangePreviewPrefab != null)
+        {
+            GameObject rangeVisual = Instantiate(rangePreviewPrefab, parent);
+            rangeVisual.transform.localPosition = Vector3.zero;
+            rangeVisual.name = "RangeIndicator(Clone)";
+            float diameter = range * 2f;
+            rangeVisual.transform.localScale = new Vector3(diameter, diameter, 1f);
+        }
+    }
+    
     bool IsValidPlacement(Vector3 position)
     {
         Collider2D overlap = Physics2D.OverlapCircle(position, 0.5f, invalidPlacementLayer);

@@ -1,14 +1,22 @@
 using UnityEngine;
 
-// This attribute allows us to create instances of this object from the Unity menu.
 [CreateAssetMenu(fileName = "New Tower", menuName = "Towers/Tower Data")]
 public class TowerData : ScriptableObject
 {
     [Header("Tower Info")]
     public string towerName;
-    public GameObject towerPrefab; // The actual tower prefab (with the Turret.cs script)
+    public GameObject towerPrefab;
 
     [Header("Building Stats")]
     public int buildCost;
-    // You can add more stats here later, like upgrade costs, etc.
+
+    [Header("Combat Stats (All Towers)")]
+    public float range;
+    public float fireRate; // For Turret/Mortar
+    public int shotsUntilBreakdown;
+
+    [Header("Combat Stats (Flamethrower Only)")]
+    public float damagePerSecond;
+    public float flameAngle;
 }
+

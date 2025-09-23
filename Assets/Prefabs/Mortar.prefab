@@ -137,8 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1900577f73aebe949ba6cbde529db52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  towerData: {fileID: 11400000, guid: b700e8c200776624a885d8f4813bfcc4, type: 2}
   range: 7.4
-  fireRate: 1
+  fireRate: 0.5
   shotsUntilBreakdown: 3
   isBrokenDown: 0
   enemyTag: Enemy

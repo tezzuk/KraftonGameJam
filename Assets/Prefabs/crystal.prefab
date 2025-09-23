@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
   m_Color: {r: 1, g: 0.9990674, b: 0.07232696, a: 1}
   m_FlipX: 0
@@ -104,10 +104,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b28de8a8b6ebce45b65eabcd268435e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  maxTurretConnections: 1
+  innerRegionRadius: 8.17
+  midRegionRadius: 15.3
+  midRegionPenaltyCost: 25
+  outerRegionPenaltyCost: 50
+  midRegionTimePenalty: 0.6
+  outerRegionTimePenalty: 0.8
+  baseRewindCastTime: 0.3
+  maxTurretConnections: 4
   maxMortarConnections: 1
+  maxFlamethrowerConnections: 1
   connectedTurrets: []
   connectedMortars: []
+  connectedFlamethrowers: []
   threadPrefab: {fileID: 4365029200601759985, guid: dfbf51f7ea615c84392f01c2f0ec876c, type: 3}
 --- !u!61 &919829724381387822
 BoxCollider2D:

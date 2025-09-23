@@ -7,7 +7,18 @@ public class ThreadManager : MonoBehaviour
     public Camera mainCamera;
     public LayerMask clickableLayer;
 
-    private TimeCrystal selectedCrystal;
+    // This will now hold a permanent reference to the single Time Crystal in the scene.
+    private TimeCrystal timeCrystal;
+
+    void Start()
+    {
+        // At the start of the game, automatically find the Time Crystal object.
+        timeCrystal = FindObjectOfType<TimeCrystal>();
+        if (timeCrystal == null)
+        {
+            Debug.LogError("FATAL ERROR: No TimeCrystal object found in the scene! Rewind and thread systems will not work.");
+        }
+    }
 
     void Update()
     {
@@ -17,7 +28,6 @@ public class ThreadManager : MonoBehaviour
     private void HandlePlayerInput()
     {
         // --- Connection Logic (Only works during Build Phase) ---
-        // This part allows the player to connect/disconnect threads.
         if (GameManager.instance.currentState == GameManager.GameState.BuildPhase)
         {
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
@@ -27,18 +37,17 @@ public class ThreadManager : MonoBehaviour
         }
 
         // --- Rewind Activation Logic (Works ANY time) ---
-        // This part listens for the 'R' key press to activate the rewind.
-        // It is outside the build phase check so it works during a wave.
+        // This now checks for the automatically found crystal.
         if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
         {
-            if (selectedCrystal != null)
+            if (timeCrystal != null)
             {
-                Debug.Log("Rewind key ('R') pressed. Activating crystal.");
-                selectedCrystal.ActivateRewind();
+                Debug.Log("Rewind key ('R') pressed. Activating the Time Crystal.");
+                timeCrystal.ActivateRewind();
             }
             else
             {
-                Debug.Log("Rewind key ('R') pressed, but no Time Crystal is selected.");
+                Debug.LogWarning("Rewind key ('R') pressed, but no Time Crystal was found in the scene.");
             }
         }
     }
@@ -56,43 +65,37 @@ public class ThreadManager : MonoBehaviour
 
         if (hit.collider != null)
         {
-            if (hit.collider.TryGetComponent<TimeCrystal>(out TimeCrystal crystal))
+            // We no longer need to select the crystal, so we only check for towers.
+            if (hit.collider.TryGetComponent<Turret>(out Turret turret))
             {
-                selectedCrystal = crystal;
-                Debug.Log("Time Crystal selected.");
-            }
-            else if (hit.collider.TryGetComponent<Turret>(out Turret turret))
-            {
-                if (selectedCrystal != null)
+                if (timeCrystal != null)
                 {
-                    if (selectedCrystal.connectedTurrets.Contains(turret))
-                    {
-                        selectedCrystal.RemoveConnection(turret);
-                    }
+                    if (timeCrystal.connectedTurrets.Contains(turret))
+                        timeCrystal.RemoveConnection(turret);
                     else
-                    {
-                        selectedCrystal.AddConnection(turret);
-                    }
+                        timeCrystal.AddConnection(turret);
                 }
             }
             else if (hit.collider.TryGetComponent<Mortar>(out Mortar mortar))
             {
-                if (selectedCrystal != null)
+                if (timeCrystal != null)
                 {
-                    if (selectedCrystal.connectedMortars.Contains(mortar))
-                    {
-                        selectedCrystal.RemoveConnection(mortar);
-                    }
+                    if (timeCrystal.connectedMortars.Contains(mortar))
+                        timeCrystal.RemoveConnection(mortar);
                     else
-                    {
-                        selectedCrystal.AddConnection(mortar);
-                    }
+                        timeCrystal.AddConnection(mortar);
                 }
             }
-        }
-        else
-        {
-            selectedCrystal = null;
+             else if (hit.collider.TryGetComponent<Flamethrower>(out Flamethrower flamethrower))
+            {
+                if (timeCrystal != null)
+                {
+                    if (timeCrystal.connectedFlamethrowers.Contains(flamethrower))
+                        timeCrystal.RemoveConnection(flamethrower);
+                    else
+                        timeCrystal.AddConnection(flamethrower);
+                }
+            }
         }
     }
 }

@@ -3,58 +3,58 @@ using System.Collections.Generic;
 
 public class Mortar : MonoBehaviour
 {
-    [Header("Mortar Attributes")]
-    public float range = 25f;
-    public float fireRate = 0.5f;
-    private float fireCountdown = 0f;
-
-    [Header("Fragile Mechanic")]
-    public int shotsUntilBreakdown = 10; // Mortars might break down faster
-    public bool isBrokenDown = false;
-    private int shotsFired = 0;
-
-    [Header("Unity Setup Fields")]
-    public string enemyTag = "Enemy";
+    [Header("Setup")]
+    public TowerData towerData; // The single source of truth for all stats
     public GameObject projectilePrefab;
     public Transform firePoint;
-    public SpriteRenderer mortarSpriteRenderer; // For visual feedback
-    public Color brokenColor = Color.grey;
-    private Color originalColor;
+
+    [Header("Live Stats")]
+    public bool isBrokenDown = false;
+    private float fireCountdown = 0f;
+    private int shotsFired = 0;
     
+    // --- Private variables ---
     private GameObject currentTarget = null;
     private List<GameObject> targetsInRange = new List<GameObject>();
-
+    private Color originalColor;
+    private SpriteRenderer towerSpriteRenderer;
+    
     void Start()
     {
-        // Store the original color for the rewind mechanic
-        if (mortarSpriteRenderer != null)
+        towerSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (towerSpriteRenderer != null) originalColor = towerSpriteRenderer.color;
+
+        // --- AUTO-RANGE SETUP ---
+        // Find the RangeDetector child object and automatically set its
+        // collider radius based on the value in our TowerData asset.
+        RangeDetector detector = GetComponentInChildren<RangeDetector>();
+        if (detector != null)
         {
-            originalColor = mortarSpriteRenderer.color;
+            CircleCollider2D rangeCollider = detector.GetComponent<CircleCollider2D>();
+            if (rangeCollider != null)
+            {
+                rangeCollider.radius = towerData.range;
+            }
         }
     }
-
+    
     void Update()
     {
-        // If the mortar is broken, it cannot do anything.
         if (isBrokenDown) return;
 
         if (currentTarget == null)
         {
             targetsInRange.RemoveAll(item => item == null);
-            if (targetsInRange.Count > 0)
-            {
-                currentTarget = targetsInRange[0];
-            }
-            else
-            {
-                return;
-            }
+            if (targetsInRange.Count > 0) currentTarget = targetsInRange[0];
+            else return; // No target, do nothing.
         }
         
+        // Firing logic for the Mortar
         if (fireCountdown <= 0f)
         {
             Shoot();
-            fireCountdown = 1f / fireRate;
+            // Read the fireRate from the TowerData asset
+            fireCountdown = 1f / towerData.fireRate;
         }
         fireCountdown -= Time.deltaTime;
     }
@@ -63,47 +63,39 @@ public class Mortar : MonoBehaviour
     {
         GameObject shellGO = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         MortarShell shell = shellGO.GetComponent<MortarShell>();
-
         if (shell != null)
         {
             shell.SetTarget(currentTarget.transform);
         }
 
-        // Count the shot and check if it breaks down
         shotsFired++;
-        if (shotsFired >= shotsUntilBreakdown)
+        // Read the shot capacity from the TowerData asset
+        if (shotsFired >= towerData.shotsUntilBreakdown)
         {
             BreakDown();
         }
     }
 
+    // --- Fragile and Rewind Methods ---
+
     void BreakDown()
     {
         isBrokenDown = true;
-        Debug.Log(gameObject.name + " has broken down!");
-        if (mortarSpriteRenderer != null)
-        {
-            mortarSpriteRenderer.color = brokenColor;
-        }
+        if (towerSpriteRenderer != null) towerSpriteRenderer.color = Color.gray;
     }
 
-    // This public method is called by the Time Crystal to repair the mortar
     public void Rewind()
     {
-        Debug.Log("Rewinding " + gameObject.name);
         isBrokenDown = false;
         shotsFired = 0;
-
-        if (mortarSpriteRenderer != null)
-        {
-            mortarSpriteRenderer.color = originalColor;
-        }
+        if (towerSpriteRenderer != null) towerSpriteRenderer.color = originalColor;
     }
 
-    // These public methods are called by the child "RangeDetector" script
+    // --- Enemy Detection Methods (called by RangeDetector) ---
+
     public void OnEnemyEnteredRange(GameObject enemy)
     {
-        if (enemy.CompareTag(enemyTag) && !targetsInRange.Contains(enemy))
+        if (enemy.CompareTag("Enemy") && !targetsInRange.Contains(enemy))
         {
             targetsInRange.Add(enemy);
         }
@@ -111,20 +103,8 @@ public class Mortar : MonoBehaviour
 
     public void OnEnemyExitedRange(GameObject enemy)
     {
-        if (targetsInRange.Contains(enemy))
-        {
-            targetsInRange.Remove(enemy);
-        }
-        if (enemy == currentTarget)
-        {
-            currentTarget = null;
-        }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, range);
+        if (targetsInRange.Contains(enemy)) targetsInRange.Remove(enemy);
+        if (enemy == currentTarget) currentTarget = null;
     }
 }
 

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa22fbdfe5f075428e1dfb66dbc44c6, type: 3}
+  m_Name: FlameThrower
+  m_EditorClassIdentifier: Assembly-CSharp::TowerData
+  towerName: FlameThrower
+  towerPrefab: {fileID: 1043857286897600008, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
+  buildCost: 100
+  range: 3
+  fireRate: 0
+  shotsUntilBreakdown: 5
+  damagePerSecond: 5
+  flameAngle: 45
