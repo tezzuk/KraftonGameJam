@@ -60,7 +60,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.47, y: 4.21, z: 0}
-  m_LocalScale: {x: 0.7279882, y: 0.7211318, z: 0.92929}
+  m_LocalScale: {x: 1.2016215, y: 1.1903043, z: 1.5338912}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7140807914476496003}
@@ -113,8 +113,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 4856365448992700473, guid: 46c5c444ac01d1c458daaf4ba0c63206, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,15 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   towerData: {fileID: 11400000, guid: b700e8c200776624a885d8f4813bfcc4, type: 2}
-  range: 7.4
-  fireRate: 0.5
-  shotsUntilBreakdown: 3
-  isBrokenDown: 0
-  enemyTag: Enemy
   projectilePrefab: {fileID: 8804762272596218422, guid: a43ea8be63742ed40bca06acada513d3, type: 3}
   firePoint: {fileID: 928483175792654404}
-  mortarSpriteRenderer: {fileID: 6506852310390775097}
-  brokenColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  isBrokenDown: 0
 --- !u!61 &6515576573477623934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,17 +175,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.008882612, y: 0}
+  m_Offset: {x: 0.008882582, y: -0.009771258}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.8, y: 0.8}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.373081, y: 2}
+  m_Size: {x: 0.85041463, y: 1.022897}
   m_EdgeRadius: 0
 --- !u!1 &4151851048163973487
 GameObject:
@@ -261,7 +255,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 10.19
+  m_Radius: 5.88
 --- !u!114 &4911821004274249815
 MonoBehaviour:
   m_ObjectHideFlags: 0

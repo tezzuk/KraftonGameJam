@@ -15,7 +15,7 @@ MonoBehaviour:
   towerName: FlameThrower
   towerPrefab: {fileID: 1043857286897600008, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
   buildCost: 100
-  range: 3
+  range: 2
   fireRate: 0
   shotsUntilBreakdown: 5
   damagePerSecond: 5
