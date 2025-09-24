@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text FuelText, CurrencyText, WaveText, turrentNo, MortorNo, FlameNO, timerText, BuildText,healthText;
     public GameManager gameManager;
     public TimeCrystal timeCrystal;
+    public WaveSpawner waveSpawner;
     public Animator animator;
     private bool animationPlayed = false;
     private float timer;
@@ -28,45 +29,50 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        healthText.text =gameManager.crystalHealth.ToString() + "0%";
+
+        healthText.text = gameManager.crystalHealth.ToString() + "0%";
         FuelText.text = "Fuel: " + Mathf.FloorToInt(fuel).ToString();
         CurrencyText.text = "Money: " + gameManager.currency.ToString();
         turrentNo.text = timeCrystal.maxTurretConnections.ToString();
         MortorNo.text = timeCrystal.maxMortarConnections.ToString();
         FlameNO.text = timeCrystal.maxFlamethrowerConnections.ToString();
-        if (timer > 0)
+        if (waveSpawner.currentWaveIndex < waveSpawner.waves.Count)
         {
-            timer -= Time.deltaTime;
-            // Update UI
-            // Timer text
-            int minutes = Mathf.CeilToInt(timer) / 60;
-            int seconds = Mathf.CeilToInt(timer) % 60;
-            timerText.text = minutes + ":" + seconds.ToString("00");
-            BuildText.text = "Build Phase";
-            BuildText.color = Color.red;
-            // Play animation and turn text red at 3 seconds
-            if (!animationPlayed && timer <= 4f)
+            WaveText.text = "Wave: " + (waveSpawner.currentWaveIndex + 1).ToString() + "/" + waveSpawner.waves.Count.ToString();
+            if (timer > 0)
             {
-                animator.SetTrigger("PlayAnim");
-                animationPlayed = true;
+                timer -= Time.deltaTime;
+                // Update UI
+                // Timer text
+                int minutes = Mathf.CeilToInt(timer) / 60;
+                int seconds = Mathf.CeilToInt(timer) % 60;
+                timerText.text = minutes + ":" + seconds.ToString("00");
+                BuildText.text = "Build Phase";
+                BuildText.color = Color.red;
+                // Play animation and turn text red at 3 seconds
+                if (!animationPlayed && timer <= 4f)
+                {
+                    animator.SetTrigger("PlayAnim");
+                    animationPlayed = true;
 
+                }
+                if (timer <= 3f)
+                {
+                    timerText.color = Color.red;
+                }
             }
-            if (timer <= 3f)
+            else
             {
-                timerText.color = Color.red;
+                timerText.text = "";
+                BuildText.text = "Defend Phase";
+                BuildText.color = Color.green;
             }
-        }
-        else
-        {
-            timerText.text = "";
-            BuildText.text = "Defend Phase";
-            BuildText.color = Color.green;
         }
     }
 
     public void resetTimer()
     {
-        timer = gameManager.buildPhaseTime + 10f;
+        timer = gameManager.buildPhaseTime;
         animationPlayed = false; // reset for next countdown
         timerText.color = Color.white; // reset color
     }

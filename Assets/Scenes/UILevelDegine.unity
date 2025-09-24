@@ -528,6 +528,7 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 39a5b41758459ee4d9154be15174df99, type: 2}
   - {fileID: 11400000, guid: 10409145548c39f488a519bd50ecd028, type: 2}
+  currentWaveIndex: 0
 --- !u!4 &67388300
 Transform:
   m_ObjectHideFlags: 0
@@ -2733,6 +2734,10 @@ PrefabInstance:
       propertyPath: timeCrystal
       value: 
       objectReference: {fileID: 1113276738}
+    - target: {fileID: 841121825667546037, guid: 1c8a8901fda203044a10f49b6d5ecf0c, type: 3}
+      propertyPath: waveSpawner
+      value: 
+      objectReference: {fileID: 67388299}
     - target: {fileID: 841121825667546037, guid: 1c8a8901fda203044a10f49b6d5ecf0c, type: 3}
       propertyPath: CurrencyText
       value: 
@@ -9710,6 +9715,18 @@ PrefabInstance:
     - target: {fileID: 8731003888568379875, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
       propertyPath: m_Name
       value: crystal
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063488225832774054, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
+      propertyPath: maxMortarConnections
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063488225832774054, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
+      propertyPath: maxTurretConnections
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063488225832774054, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
+      propertyPath: maxFlamethrowerConnections
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

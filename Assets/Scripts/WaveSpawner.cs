@@ -11,7 +11,7 @@ public class WaveSpawner : MonoBehaviour
     public Transform[] waypoints;
     public List<WaveData> waves = new List<WaveData>();
 
-    private int currentWaveIndex = 0;
+    public int currentWaveIndex = 0;
     private int enemiesRemainingInWave;
 
     void Awake()
