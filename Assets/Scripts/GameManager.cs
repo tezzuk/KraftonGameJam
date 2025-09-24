@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public int midWaveBuildLimit = 1;
     public int midWaveBuildsUsed { get; private set; }
     public UIManager uiManager;
+    public GameObject WinPanel,LosePanel;
 
     void Awake()
     {
@@ -75,6 +76,12 @@ public class GameManager : MonoBehaviour
     {
         // --- NEW DEBUG LOG ---
         Debug.Log("GameManager has been notified that the wave is complete. Starting next build phase timer.");
+        if (waveIndex >= waveSpawner.waves.Count)
+        {
+            Debug.Log("All waves completed! YOU WIN!");
+            WinPanel.SetActive(true);
+            return;
+        }
         waveIndex++;
         EnterBuildPhase();
     }
@@ -102,6 +109,7 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.GameOver;
         Debug.Log("GAME OVER!");
+        LosePanel.SetActive(true);
         Time.timeScale = 0;
     }
 

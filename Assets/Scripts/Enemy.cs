@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class Enemy : MonoBehaviour
 {
     [Header("Live Stats (Set by Spawner)")]
@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     public int currencyOnDeath;
     public GameObject floatingTextPrefab;
+    public float freezTime = 0.5f;
 
     //public UIManager uiManager;
 
@@ -60,6 +61,7 @@ public class Enemy : MonoBehaviour
         UIManager.Instance.AddFuel(damage);
         if (damage > 1.0f)
             ShowFloatingText("-" + damage.ToString());
+            StartCoroutine(FreezCoroutine());
         if (health <= 0)
         {
             Die();
@@ -85,5 +87,31 @@ public class Enemy : MonoBehaviour
             ft.GetComponent<FloatingText>().Initialize(text, Color.red);
         }
     }
+    IEnumerator FreezCoroutine()
+{
+    float originalSpeed = moveSpeed;
+
+    // Cache the SpriteRenderer
+    SpriteRenderer sr = GetComponent<SpriteRenderer>();
+
+    // Store the original color (assuming it's red)
+    Color originalColor = sr.color;
+
+    // Change to reddish-blue while frozen
+    sr.color = new Color(0.5f, 0.2f, 1f);  // adjust values until it looks right
+
+    // Freeze movement
+    moveSpeed = 0;
+
+    // Wait for freeze duration
+    yield return new WaitForSeconds(freezTime);
+
+    // Restore speed
+    moveSpeed = originalSpeed;
+
+    // Change back to red
+    sr.color = Color.red;
+}
+
 }
 
