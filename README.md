@@ -21,10 +21,10 @@ tutorial and instrutions can be seen at main menu.
 
 ## 🎮 Game Overview
 
-This is a **tower defense game** where enemies march toward your crystal.
+This is a tower defense game where enemies march toward your crystal.
 Your objective is to strategically place towers, connect them to the crystal, and stop the enemies before they reduce the crystal’s health to zero.
 
-The game features a **Build Phase** where you can place or reposition towers, and a **Combat Phase** where enemies attack in waves. Towers consume ammo/fire capacity and can only be reactivated by rewinding them using special Time Threads.
+The game features a Build Phase where you can place or reposition towers, and a **Combat Phase** where enemies attack in waves. Towers consume ammo/fire capacity and can only be reactivated by rewinding them using special Time Threads.
 
 ## 🎮 Controls
 
@@ -41,8 +41,8 @@ The game features a **Build Phase** where you can place or reposition towers, an
   * Choose which tower type (Turret, Mortar, Firethrower) to place.
 * R Key
 
-  * Rewind a tower to **reactivate it after ammo/fire runs out**.
-  * Rewind chances are **limited per wave**.
+  * Rewind a tower to reactivate it after ammo/fire runs out.
+  * Rewind chances are limited per wave.
 * Main Menu
 
   * Access tutorial and instructions.
@@ -59,7 +59,7 @@ The game features a **Build Phase** where you can place or reposition towers, an
 1. Download the game folder.
 2. Unzip the contents to your preferred location.
 3. Run the provided `.exe` file to start the game.
-4. Using the Git URL "" you can get source code.
+4. Using the Git URL " https://github.com/tezzuk/KraftonGameJam.git " you can get source code.
 
 
 ## 🏗️ Game Mechanics
