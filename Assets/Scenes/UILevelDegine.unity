@@ -10177,6 +10177,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9031661931529711960, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_text
+      value: 'No. of threads :'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031661931529711960, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_fontSize
       value: 45.6
       objectReference: {fileID: 0}
@@ -11821,15 +11825,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9063488225832774054, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
       propertyPath: maxMortarConnections
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9063488225832774054, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
       propertyPath: maxTurretConnections
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9063488225832774054, guid: dcc94f9a9b1908b4192fb965033b367c, type: 3}
       propertyPath: maxFlamethrowerConnections
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

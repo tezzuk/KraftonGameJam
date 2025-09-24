@@ -4,16 +4,19 @@ public class Enemy : MonoBehaviour
 {
     [Header("Live Stats (Set by Spawner)")]
     public float health;
-    public float moveSpeed;
+    public float moveSpeed, initialspeed;
     public int currencyOnDeath;
     public GameObject floatingTextPrefab;
     public float freezTime = 0.5f;
+    private Color originalColor;
 
     //public UIManager uiManager;
 
     [Header("Setup")]
     public Transform[] waypoints;
     private int currentWaypointIndex = 0;
+    private Coroutine freezeCoroutine;
+    
 
     /// <summary>
     /// This is called by the WaveSpawner to
@@ -24,6 +27,10 @@ public class Enemy : MonoBehaviour
         health = data.health;
         moveSpeed = data.moveSpeed;
         currencyOnDeath = data.currencyOnDeath;
+        initialspeed = data.moveSpeed;
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        originalColor = sr.color;
+
     }
 
     void Update()
@@ -55,19 +62,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
-    {
-        health -= damage;
-        UIManager.Instance.AddFuel(damage);
-        if (damage > 1.0f)
-            ShowFloatingText("-" + damage.ToString());
-            StartCoroutine(FreezCoroutine());
-        if (health <= 0)
-        {
-            Die();
-        }
-    }
-
     void Die()
     {
         GameManager.instance.AddCurrency(currencyOnDeath);
@@ -87,31 +81,42 @@ public class Enemy : MonoBehaviour
             ft.GetComponent<FloatingText>().Initialize(text, Color.red);
         }
     }
-    IEnumerator FreezCoroutine()
-{
-    float originalSpeed = moveSpeed;
 
-    // Cache the SpriteRenderer
-    SpriteRenderer sr = GetComponent<SpriteRenderer>();
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        UIManager.Instance.AddFuel(damage);
 
-    // Store the original color (assuming it's red)
-    Color originalColor = sr.color;
+        if (damage > 1.0f)
+        {
+            ShowFloatingText("-" + damage.ToString());
 
-    // Change to reddish-blue while frozen
-    sr.color = new Color(0.5f, 0.2f, 1f);  // adjust values until it looks right
+            // Restart freeze effect safely
+            if (freezeCoroutine != null)
+                StopCoroutine(freezeCoroutine);
 
-    // Freeze movement
-    moveSpeed = 0;
+            freezeCoroutine = StartCoroutine(FreezeCoroutine()); // Fixed typo
+        }
 
-    // Wait for freeze duration
-    yield return new WaitForSeconds(freezTime);
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
 
-    // Restore speed
-    moveSpeed = originalSpeed;
+    IEnumerator FreezeCoroutine() // Fixed typo
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        // Freeze
+        sr.color = new Color(0.5f, 0.2f, 1f);
+        moveSpeed = 0;
+        yield return new WaitForSeconds(freezTime);
+        // Unfreeze
+        moveSpeed = initialspeed;
+        sr.color = originalColor;
 
-    // Change back to red
-    sr.color = Color.red;
-}
+        freezeCoroutine = null;
+    }
 
 }
 

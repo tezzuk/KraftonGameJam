@@ -33,9 +33,9 @@ public class UIManager : MonoBehaviour
         healthText.text = gameManager.crystalHealth.ToString() + "0%";
         FuelText.text = "Fuel: " + Mathf.FloorToInt(fuel).ToString();
         CurrencyText.text = "Money: " + gameManager.currency.ToString();
-        turrentNo.text = timeCrystal.maxTurretConnections.ToString();
-        MortorNo.text = timeCrystal.maxMortarConnections.ToString();
-        FlameNO.text = timeCrystal.maxFlamethrowerConnections.ToString();
+        turrentNo.text = timeCrystal.connectedTurrets.Count.ToString() + "/" + timeCrystal.maxTurretConnections.ToString();
+        MortorNo.text = timeCrystal.connectedMortars.Count.ToString() + "/" + timeCrystal.maxMortarConnections.ToString();
+        FlameNO.text = timeCrystal.connectedFlamethrowers.Count.ToString()+"/"+timeCrystal.maxFlamethrowerConnections.ToString();
         if (waveSpawner.currentWaveIndex < waveSpawner.waves.Count)
         {
             WaveText.text = "Wave: " + (gameManager.waveIndex).ToString() + "/" + waveSpawner.waves.Count.ToString();
