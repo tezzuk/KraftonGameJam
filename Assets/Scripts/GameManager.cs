@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     private float waveTimer;
     
     [Header("Rewind Settings")]
-    public int rewindsPerWave = 1;
+    public int rewindsPerWave = 1,waveIndex=1;
     private int rewindsAvailable;
 
     [Header("Progression Perks")]
@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
     {
         // --- NEW DEBUG LOG ---
         Debug.Log("GameManager has been notified that the wave is complete. Starting next build phase timer.");
+        waveIndex++;
         EnterBuildPhase();
     }
 

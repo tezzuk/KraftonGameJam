@@ -38,8 +38,8 @@ public class UIManager : MonoBehaviour
         FlameNO.text = timeCrystal.maxFlamethrowerConnections.ToString();
         if (waveSpawner.currentWaveIndex < waveSpawner.waves.Count)
         {
-            WaveText.text = "Wave: " + (waveSpawner.currentWaveIndex + 1).ToString() + "/" + waveSpawner.waves.Count.ToString();
-            if (timer > 0)
+            WaveText.text = "Wave: " + (gameManager.waveIndex).ToString() + "/" + waveSpawner.waves.Count.ToString();
+            if (timer > 0.1f)
             {
                 timer -= Time.deltaTime;
                 // Update UI

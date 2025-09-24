@@ -1923,6 +1923,7 @@ MonoBehaviour:
   startingCurrency: 9000
   buildPhaseTime: 15
   rewindsPerWave: 1
+  waveIndex: 1
   canBuildDuringWave: 0
   midWaveBuildLimit: 1
   uiManager: {fileID: 953295432}
@@ -7726,11 +7727,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2699383816124545732, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1467
+      value: 1302.9999
       objectReference: {fileID: 0}
     - target: {fileID: 2699383816124545732, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -72
+      value: -65.999985
       objectReference: {fileID: 0}
     - target: {fileID: 2740983009321634845, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8014,11 +8015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932097370628415761, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1443
+      value: 1279
       objectReference: {fileID: 0}
     - target: {fileID: 5932097370628415761, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -69
+      value: -63
       objectReference: {fileID: 0}
     - target: {fileID: 6187028049016456719, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_fontAsset
