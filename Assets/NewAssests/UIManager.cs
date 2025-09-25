@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     public Animator animator;
     private bool animationPlayed = false;
     private float timer;
-    public Enemy enemy;
+    
     public float fuel = 0;
     private void Awake()
     {

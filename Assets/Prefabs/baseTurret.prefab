@@ -315,6 +315,7 @@ MonoBehaviour:
   partToRotate: {fileID: 8477686135726580692}
   projectilePrefab: {fileID: 1918588925184424155, guid: 634a6bd0220cf1b4fbaddc3ef2150b09, type: 3}
   firePoint: {fileID: 6084752994719642371}
+  shotsUntilBreakdown: 2
   isBrokenDown: 0
 --- !u!61 &306981460764027082
 BoxCollider2D:
