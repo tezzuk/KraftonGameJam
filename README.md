@@ -2,7 +2,7 @@
 
 ## 🎮 Game Overview
 
-This is a **tower defense game** where enemies march toward your crystal.
+This is a **tower defense game** where enemies march toward your crystal. But the twist is that your towers are really fragile due to Crystal's force field and breaks after a few time of firing. But the crystal provides Threads of Time that can be attached to the tower to rewind their condition to working again.
 Your objective is to strategically place towers, connect them to the crystal, and stop the enemies before they reduce the crystal’s health to zero.
 
 The game features a **Build Phase** where you can place or reposition towers, and a **Combat Phase** where enemies attack in waves. Towers consume ammo/fire capacity and can only be reactivated by rewinding them using special Time Threads.
@@ -28,7 +28,7 @@ The game features a **Build Phase** where you can place or reposition towers, an
   * Rewind chances are **limited per wave**.
 * **Main Menu**
 
-  * Access tutorial and instructions.
+  * Access tutorial
 
 ---
 
