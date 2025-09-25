@@ -79,7 +79,7 @@ public class UIManager : MonoBehaviour
                 // Play animation and turn text red at 3 seconds
                 if (!animationPlayed && timer <= 4f)
                 {
-                    animator.SetTrigger("PlayAnim");
+                    animator.SetTrigger("PlayAnimation");
                     animationPlayed = true;
 
                 }

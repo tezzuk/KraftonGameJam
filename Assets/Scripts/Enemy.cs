@@ -88,7 +88,7 @@ public class Enemy : MonoBehaviour
     private void ProcessDamage(float damage)
     {
         health -= damage;
-        // UIManager.Instance.AddFuel(damage); // Make sure UIManager is correctly set up
+         UIManager.Instance.AddFuel(damage); // Make sure UIManager is correctly set up
 
         if (damage > 1.0f)
         {

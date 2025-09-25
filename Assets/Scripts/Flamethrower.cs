@@ -6,6 +6,7 @@ public class Flamethrower : MonoBehaviour
     [Header("Setup")]
     public Transform partToRotate;
     public ParticleSystem flameEffect;
+    public AudioSource flameAudioSource; // <-- The personal AudioSource for this tower
 
     [Header("Live Stats (Set by Upgrader)")]
     private float damagePerSecond;
@@ -51,9 +52,9 @@ public class Flamethrower : MonoBehaviour
             }
             else
             {
-                // If no targets, stop the effects
+                // If no targets, stop both the visual and audio effects
                 if (flameEffect != null && flameEffect.isPlaying) flameEffect.Stop();
-                SoundManager.instance.StopFlamethrowerSound(); // <-- Stop Sound
+                if (flameAudioSource != null && flameAudioSource.isPlaying) flameAudioSource.Stop();
                 return;
             }
         }
@@ -66,9 +67,9 @@ public class Flamethrower : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         partToRotate.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
 
-        // Start effects
+        // Start both the visual and audio effects
         if (flameEffect != null && !flameEffect.isPlaying) flameEffect.Play();
-        SoundManager.instance.PlayFlamethrowerSound(); // <-- Play Looping Sound
+        if (flameAudioSource != null && !flameAudioSource.isPlaying) flameAudioSource.Play();
 
         List<GameObject> currentTargets = new List<GameObject>(targetsInRange);
         foreach (GameObject enemyObject in currentTargets)
@@ -80,14 +81,12 @@ public class Flamethrower : MonoBehaviour
                 Enemy enemy = enemyObject.GetComponent<Enemy>();
                 if (enemy != null)
                 {
-                    // Call the new "silent" damage method on the enemy
                     enemy.TakeContinuousDamage(damagePerSecond * Time.deltaTime);
                 }
             }
         }
 
         usageTime += Time.deltaTime;
-        // Check against the correct variable name from your script
         if (secondsUntilBreakdown > 0 && usageTime >= secondsUntilBreakdown)
         {
             BreakDown();
@@ -98,7 +97,7 @@ public class Flamethrower : MonoBehaviour
     {
         isBrokenDown = true;
         if (flameEffect != null) flameEffect.Stop();
-        SoundManager.instance.StopFlamethrowerSound(); // <-- Stop Sound
+        if (flameAudioSource != null && flameAudioSource.isPlaying) flameAudioSource.Stop();
         if (towerSpriteRenderer != null) towerSpriteRenderer.color = Color.gray;
     }
 
