@@ -1141,10 +1141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: 50
-
-
-'
+  m_text: 'Cost: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 565afe0bd67285e4ea6d31ce33c81028, type: 2}
   m_sharedMaterial: {fileID: 6613956905711302332, guid: 565afe0bd67285e4ea6d31ce33c81028, type: 2}
@@ -1280,7 +1277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: 30
+  m_text: 'Cost: 80
 
 '
   m_isRightToLeft: 0
@@ -7666,7 +7663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: 25'
+  m_text: 'Cost: 50'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 565afe0bd67285e4ea6d31ce33c81028, type: 2}
   m_sharedMaterial: {fileID: 6613956905711302332, guid: 565afe0bd67285e4ea6d31ce33c81028, type: 2}

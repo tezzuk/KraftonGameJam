@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   enemyName: SlowEnemyBoss
   enemyPrefab: {fileID: 286296264883629675, guid: 24dbbce92e7c8014b85a55cda8f81385, type: 3}
-  health: 60
+  health: 150
   moveSpeed: 2.5
-  currencyOnDeath: 40
+  currencyOnDeath: 25

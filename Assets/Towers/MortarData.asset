@@ -17,16 +17,30 @@ MonoBehaviour:
   buildCost: 80
   upgradeLevels:
   - upgradeCost: 0
-    range: 8
+    range: 6
     fireRate: 0.6
-    shotsUntilBreakdown: 3
+    shotsUntilBreakdown: 5
     projectileDamage: 7
     damagePerSecond: 0
     flameAngle: 0
-  - upgradeCost: 15
-    range: 9
+  - upgradeCost: 25
+    range: 8
     fireRate: 0.7
-    shotsUntilBreakdown: 15
+    shotsUntilBreakdown: 7
     projectileDamage: 9
+    damagePerSecond: 0
+    flameAngle: 0
+  - upgradeCost: 50
+    range: 12
+    fireRate: 0.7
+    shotsUntilBreakdown: 12
+    projectileDamage: 12
+    damagePerSecond: 0
+    flameAngle: 0
+  - upgradeCost: 70
+    range: 15
+    fireRate: 0.8
+    shotsUntilBreakdown: 15
+    projectileDamage: 15
     damagePerSecond: 0
     flameAngle: 0

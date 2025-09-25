@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
   subWaves:
   - enemyType: {fileID: 11400000, guid: 965c453e13e7f9e4f9826ebc1e0a1507, type: 2}
-    count: 1
-    spawnInterval: 0.2
+    count: 4
+    spawnInterval: 1
   - enemyType: {fileID: 11400000, guid: b1d73ed9d3b064544a63e310bd1791ba, type: 2}
-    count: 1
-    spawnInterval: 0.2
-  timeBetweenSubWaves: 1
+    count: 4
+    spawnInterval: 1
+  timeBetweenSubWaves: 2

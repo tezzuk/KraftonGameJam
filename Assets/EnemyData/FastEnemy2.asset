@@ -16,4 +16,4 @@ MonoBehaviour:
   enemyPrefab: {fileID: 6629835428332532205, guid: e2a0a1a809a58334a8a215fd194d8bfe, type: 3}
   health: 30
   moveSpeed: 4.5
-  currencyOnDeath: 20
+  currencyOnDeath: 10
