@@ -52,12 +52,13 @@ The game features a **Build Phase** where you can place or reposition towers, an
 
 ## 🏗️ Game Mechanics
 
-### 🔹 Build Phase (15 seconds per wave)
+### 🔹 Build Phase (45 seconds per wave)
 
 * Place towers using the UI buttons.
 * Reposition towers by **RMB (pick up)** and **LMB (place)**.
 * Buy new towers with money earned from damaging enemies.
-* Connect towers to the **Crystal** (yellow diamond).
+* Upgrade the already existing towers with money earned from damaging enemies.
+* Connect towers to the **Crystal** (blue diamond).
 * Crystal connections are limited, and the available number is displayed on-screen.
 
 ### 🔹 Crystal
@@ -69,16 +70,16 @@ The game features a **Build Phase** where you can place or reposition towers, an
 
 ### 🔹 Towers
 
-* **Turret**: Deals **-2 damage per hit**.
+* **Turret**: Deals **-4 damage per hit**.
 * **Mortar**: Deals **-7 area damage** to enemies it collides with.
-* **Firethrower**: Deals **continuous -2 damage per second**.
+* **Firethrower**: Deals **continuous -5 damage per second**.
 * ⚠️ **Capacity Limit**:
 
   * Each tower type has limited ammo/fire.
   * Once capacity is used up, the tower becomes **inactive**.
   * You must use **Rewind (R key)** with a crystal thread to reactivate it.
   * Each wave has **limited rewind chances**.
-
+* **Towers** can be **upgraded** by using coins to increase damage and other parameters.
 ### 🔹 Enemies
 
 * Two types appear in waves:
@@ -94,7 +95,7 @@ The game features a **Build Phase** where you can place or reposition towers, an
 
 ### 🔹 Progression
 
-* Two waves of enemies are currently implemented.
+* Four waves of enemies are currently implemented.
 * Earn money by damaging enemies to purchase more towers.
 * All game parameters (tower stats, wave timing, rewind chances, etc.) can be tuned in the **Thread Manager**, **Build Manager**, and **Game Manager** scripts.
 
