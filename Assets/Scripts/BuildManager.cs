@@ -12,6 +12,8 @@ public class BuildManager : MonoBehaviour
     public GameObject rangePreviewPrefab;
     public UpgradePanelUI upgradePanel;
 
+    public bool IsPlacingOrRepositioning { get; private set; } = false;
+
     // State variables
     private TowerData selectedTowerToBuild;
     private GameObject towerPreviewInstance;
@@ -199,7 +201,6 @@ public class BuildManager : MonoBehaviour
         towerToReposition.transform.position = mousePosition;
         bool canPlace = IsValidPlacement(mousePosition);
         previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
-
         if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
         {
             FinalizeRepositioning();
@@ -210,6 +211,7 @@ public class BuildManager : MonoBehaviour
     {
         // Remove the temporary range indicator visual
         foreach (Transform child in towerToReposition.transform)
+        if (towerToReposition.transform.childCount > 0)
         {
             if (child.name.Contains("RangeIndicator"))
             {
@@ -226,12 +228,11 @@ public class BuildManager : MonoBehaviour
         if (towerToReposition.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = true;
         RangeDetector detector = towerToReposition.GetComponentInChildren<RangeDetector>();
         if (detector != null) detector.enabled = true;
-
         previewSpriteRenderer.color = Color.white;
         towerToReposition = null;
         previewSpriteRenderer = null;
+        IsPlacingOrRepositioning = false;
     }
-
     void HandleNewTowerPlacement()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -239,13 +240,13 @@ public class BuildManager : MonoBehaviour
         towerPreviewInstance.transform.position = mousePosition;
         bool canPlace = IsValidPlacement(mousePosition);
         previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
-
         if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
         {
             PlaceTower(towerPreviewInstance.transform.position);
         }
     }
 
+    
     void CreateRangePreview(float range, Transform parent)
     {
         if (rangePreviewPrefab != null)

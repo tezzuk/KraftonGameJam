@@ -102,6 +102,9 @@ public class GameManager : MonoBehaviour
     public void EnemyReachedCrystal()
     {
         if (currentState == GameState.GameOver) return;
+        SoundManager.instance.PlayCrystalDamageSound();
+
+
         crystalHealth--;
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
