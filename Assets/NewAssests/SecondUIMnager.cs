@@ -28,11 +28,12 @@ public class SecondUIMnager : MonoBehaviour
     {
         InstructionPanel.SetActive(false);
         TutorialPanel.SetActive(false);
-        currentIndex = 0;
+        //currentIndex = 0;
         for (int i = 0; i < panels.Length; i++)
         {
             panels[i].SetActive(false);
         }
+        currentIndex = 0;
     }
     public void Replay()
     {
@@ -56,6 +57,10 @@ public class SecondUIMnager : MonoBehaviour
             currentIndex++;
 
             panels[currentIndex].SetActive(true);    // Show next
+        }
+        if (currentIndex == panels.Length-1)
+        {
+            Close();
         }
     }
 
