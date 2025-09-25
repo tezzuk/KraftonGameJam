@@ -45,7 +45,7 @@ The game features a **Build Phase** where you can place or reposition towers, an
 
 1. **Download** the game folder.
 2. **Unzip** the contents to your preferred location.
-3. Run the provided **`.exe` file** to start the game.
+3. Run the provided **`.exe` file** inside the Build folder to start the game.
 4. Using the Git URL " https://github.com/tezzuk/KraftonGameJam.git " you can get source code.
 
 ---
