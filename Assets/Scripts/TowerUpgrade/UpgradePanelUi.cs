@@ -49,11 +49,11 @@ public class UpgradePanelUI : MonoBehaviour
 
         if (nextStats != null)
         {
-            upgradeCostText.text = $"Upgrade Cost: {nextStats.upgradeCost}";
+            upgradeCostText.text = $"Cost: {nextStats.upgradeCost}";
             upgradeButton.interactable = true;
 
             // Display comparison with next level stats
-            string nextStatsInfo = $"\n\nNext Level\n" +
+            string nextStatsInfo = $"\n\n<u>Next Level</u>\n" +
                                    $"Range: {nextStats.range} (+{nextStats.range - currentStats.range:F1})\n" +
                                    $"Fire Rate: {nextStats.fireRate} (+{nextStats.fireRate - currentStats.fireRate:F2})\n" +
                                    $"Damage: {nextStats.projectileDamage} (+{nextStats.projectileDamage - currentStats.projectileDamage})";
