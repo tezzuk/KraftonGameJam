@@ -10,7 +10,7 @@ public class Mortar : MonoBehaviour
     [Header("Live Stats (Set by Upgrader)")]
     private float range;
     private float fireRate;
-    private int shotsUntilBreakdown;
+    public int shotsUntilBreakdown;
     private int projectileDamage;
 
     public bool isBrokenDown = false;

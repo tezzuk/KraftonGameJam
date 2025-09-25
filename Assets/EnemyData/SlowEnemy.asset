@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24c64e5fdd0e42742832bf94703803d0, type: 3}
   m_Name: SlowEnemy
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  enemyName: Slow
+  enemyName: SlowEnemy
   enemyPrefab: {fileID: 3433392457829488127, guid: 60de0f8943cd0e642a4adb7fa04b0c26, type: 3}
-  health: 30
+  health: 15
   moveSpeed: 2
   currencyOnDeath: 10

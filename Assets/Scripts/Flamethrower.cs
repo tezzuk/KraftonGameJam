@@ -10,7 +10,7 @@ public class Flamethrower : MonoBehaviour
     [Header("Live Stats (Set by Upgrader)")]
     private float damagePerSecond;
     private float flameAngle;
-    private float secondsUntilBreakdown; // Note: 'shotsUntilBreakdown' from data is used for this
+    private float secondsUntilBreakdown;
 
     public bool isBrokenDown = false;
     private float usageTime = 0;
@@ -51,14 +51,12 @@ public class Flamethrower : MonoBehaviour
             }
             else
             {
-                if (flameEffect != null && flameEffect.isPlaying)
-                {
-                    flameEffect.Stop();
-                }
+                // If no targets, stop the effects
+                if (flameEffect != null && flameEffect.isPlaying) flameEffect.Stop();
+                SoundManager.instance.StopFlamethrowerSound(); // <-- Stop Sound
                 return;
             }
         }
-
         EngageTarget();
     }
 
@@ -68,30 +66,29 @@ public class Flamethrower : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         partToRotate.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
 
-        if (flameEffect != null && !flameEffect.isPlaying)
-        {
-            flameEffect.Play();
-        }
+        // Start effects
+        if (flameEffect != null && !flameEffect.isPlaying) flameEffect.Play();
+        SoundManager.instance.PlayFlamethrowerSound(); // <-- Play Looping Sound
 
         List<GameObject> currentTargets = new List<GameObject>(targetsInRange);
         foreach (GameObject enemyObject in currentTargets)
         {
             if (enemyObject == null) continue;
-
             Vector2 directionToEnemy = enemyObject.transform.position - partToRotate.position;
-
             if (Vector2.Angle(partToRotate.up, directionToEnemy) < flameAngle / 2)
             {
                 Enemy enemy = enemyObject.GetComponent<Enemy>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(damagePerSecond * Time.deltaTime);
+                    // Call the new "silent" damage method on the enemy
+                    enemy.TakeContinuousDamage(damagePerSecond * Time.deltaTime);
                 }
             }
         }
 
         usageTime += Time.deltaTime;
-        if (usageTime >= secondsUntilBreakdown)
+        // Check against the correct variable name from your script
+        if (secondsUntilBreakdown > 0 && usageTime >= secondsUntilBreakdown)
         {
             BreakDown();
         }
@@ -101,6 +98,7 @@ public class Flamethrower : MonoBehaviour
     {
         isBrokenDown = true;
         if (flameEffect != null) flameEffect.Stop();
+        SoundManager.instance.StopFlamethrowerSound(); // <-- Stop Sound
         if (towerSpriteRenderer != null) towerSpriteRenderer.color = Color.gray;
     }
 
@@ -125,3 +123,4 @@ public class Flamethrower : MonoBehaviour
         if (enemy == currentTarget) currentTarget = null;
     }
 }
+
