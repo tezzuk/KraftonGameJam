@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
     
     public void StartWave()
     {
+         SoundManager.instance.PlayDefenseMusic();
         if (currentState == GameState.BuildPhase)
         {
             currentState = GameState.WaveInProgress;
@@ -90,6 +91,8 @@ public class GameManager : MonoBehaviour
 
     public void EnterBuildPhase()
     {
+                SoundManager.instance.PlayBuildMusic();
+
         currentState = GameState.BuildPhase;
         rewindsAvailable = rewindsPerWave;
         waveTimer = buildPhaseTime; 

@@ -219,6 +219,8 @@ public class BuildManager : MonoBehaviour
 
         // Re-enable all the tower's components
         if (towerToReposition.TryGetComponent<TowerUpgrader>(out TowerUpgrader upgrader)) upgrader.enabled = true;
+                SoundManager.instance.PlayTowerPlaceSound();
+
         if (towerToReposition.TryGetComponent<Turret>(out Turret turret)) turret.enabled = true;
         if (towerToReposition.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = true;
         if (towerToReposition.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = true;
