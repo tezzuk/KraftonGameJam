@@ -3,11 +3,14 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject rewindImage1, rewindImage2;
     public static UIManager Instance;  // Singleton reference 
-    public TMP_Text FuelText, CurrencyText, WaveText, turrentNo, MortorNo, FlameNO, timerText, BuildText,healthText;
+    public TMP_Text FuelText, CurrencyText, WaveText, turrentNo, MortorNo, FlameNO, timerText, BuildText,healthText, rewindText;
     public GameManager gameManager;
     public TimeCrystal timeCrystal;
     public WaveSpawner waveSpawner;
+    public SpriteRenderer spriteS; // Assign sprite S in Inspector
+    public Transform spriteD;      // Assign sprite D in Inspector
     public Animator animator;
     private bool animationPlayed = false;
     private float timer;
@@ -29,7 +32,31 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
+        float t = Mathf.InverseLerp(10, 0, gameManager.crystalHealth);  
+        if (spriteS != null)
+        {
+            spriteS.color = Color.Lerp(Color.green, Color.red, t);
+        }
 
+        // 2. Scale change for sprite D (0 -> 5.7 on X)
+        if (spriteD != null)
+        {
+            float newScaleX = Mathf.Lerp(0f, 5.7f, t);
+            Vector3 scale = spriteD.localScale;
+            scale.x = newScaleX;
+            spriteD.localScale = scale;
+        }
+        if (gameManager.rewindsAvailable > 0)
+        {
+            rewindImage1.SetActive(true);
+            rewindImage2.SetActive(false);
+        }
+        else
+        {
+            rewindImage1.SetActive(false);
+            rewindImage2.SetActive(true);
+        }
+        rewindText.text = " x " + gameManager.rewindsAvailable.ToString();
         healthText.text = gameManager.crystalHealth.ToString() + "0%";
         FuelText.text = "Fuel: " + Mathf.FloorToInt(fuel).ToString();
         CurrencyText.text = "Money: " + gameManager.currency.ToString();

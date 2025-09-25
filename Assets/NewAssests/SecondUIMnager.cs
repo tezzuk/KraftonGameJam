@@ -36,6 +36,10 @@ public class SecondUIMnager : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
+    public void next()
+    {
+        Debug.Log("next");
+    }
 
 
 }

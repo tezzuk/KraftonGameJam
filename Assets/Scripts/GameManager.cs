@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public enum GameState { BuildPhase, WaveInProgress, GameOver }
     public GameState currentState { get; private set; }
+    public Animator animator;
+    public string animationName = "redEffect"; // Name of the state in Animator
 
     [Header("Setup")]
     public WaveSpawner waveSpawner;
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
     
     [Header("Rewind Settings")]
     public int rewindsPerWave = 1,waveIndex=1;
-    private int rewindsAvailable;
+    public int rewindsAvailable;
 
     [Header("Progression Perks")]
     public bool canBuildDuringWave = false;
@@ -98,7 +100,14 @@ public class GameManager : MonoBehaviour
     {
         if (currentState == GameState.GameOver) return;
         crystalHealth--;
-        if (crystalHealth <= 0) 
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+        // Check if the current state is NOT already the animation
+        if (!stateInfo.IsName(animationName))
+        {
+            animator.Play(animationName, 0, 0f); // Play from start
+        }
+        if (crystalHealth <= 0)
         {
             GameOver();
         }
