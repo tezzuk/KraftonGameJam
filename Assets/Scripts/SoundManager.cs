@@ -121,6 +121,7 @@ public class SoundManager : MonoBehaviour
     {
         if (loopingSfxSource != null && flamethrowerLoopSound != null)
         {
+          
             // Assign the clip and play it only if it's not already playing
             if (loopingSfxSource.clip == flamethrowerLoopSound && loopingSfxSource.isPlaying) return;
             
