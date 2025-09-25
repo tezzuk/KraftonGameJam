@@ -8385,17 +8385,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1229843127 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1360314617233527911, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
-  m_PrefabInstance: {fileID: 1891019901}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1237770460
 GameObject:
   m_ObjectHideFlags: 0
@@ -12613,6 +12602,10 @@ PrefabInstance:
       propertyPath: upgradeCostText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2291994962582959305, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2745816623041919828, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_SizeDelta.x
       value: 175.5955
@@ -12657,6 +12650,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5260071172358067796, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5327933838752462337, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -12671,6 +12668,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5344863270191838812, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
       propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367996828810211881, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367996828810211881, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367996828810211881, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 320.76953
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367996828810211881, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -160.38477
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712392351821203069, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_text
+      value: 'You Lost
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712392351821203069, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7482183164737840285, guid: 152443d0b52d279478c9b2e2b96b4804, type: 3}
@@ -26625,6 +26648,8 @@ MonoBehaviour:
   defensePhaseMusic: {fileID: 8300000, guid: 1ee1ce15dc97d1b4ebd88660f33cfe10, type: 3}
   rewindSound: {fileID: 0}
   crystalDamageSound: {fileID: 0}
+  flamethrowerLoopSound: {fileID: 0}
+  loopingSfxSource: {fileID: 0}
 --- !u!4 &2092801035
 Transform:
   m_ObjectHideFlags: 0
@@ -27173,6 +27198,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlameThrower
       objectReference: {fileID: 0}
+    - target: {fileID: 1510828741316550176, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191714440014815859, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3110695835835557090, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.29
@@ -27212,6 +27245,10 @@ PrefabInstance:
     - target: {fileID: 3110695835835557090, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773502866139512711, guid: 4c22f5a920dcc4341b6fbadc3527d100, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

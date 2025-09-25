@@ -72,7 +72,8 @@ public class SecondUIMnager : MonoBehaviour
     public float delay = 32f;
     void Start()
     {
-        StartCoroutine(WaitAndLoadScene());
+        if (SceneManager.GetActiveScene().buildIndex ==1)
+            StartCoroutine(WaitAndLoadScene());
     }
     IEnumerator WaitAndLoadScene()
     {
