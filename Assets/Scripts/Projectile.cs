@@ -3,7 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 70f;
-    public int damage = 2;
+    public int damage; // Damage is now set by the tower that creates it
 
     private Transform target;
 

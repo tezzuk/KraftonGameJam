@@ -1,22 +1,32 @@
 using UnityEngine;
 
+// This new class will define the stats for a single upgrade level.
+[System.Serializable]
+public class TowerUpgradeLevel
+{
+    public int upgradeCost;
+    public float range;
+    public float fireRate; // For Turret/Mortar
+    public int shotsUntilBreakdown;
+
+    [Header("Projectile Damage (if applicable)")]
+    public int projectileDamage; // For Turret's Projectile or Mortar's Shell
+
+    [Header("Flamethrower Damage (if applicable)")]
+    public float damagePerSecond;
+    public float flameAngle;
+}
+
+
 [CreateAssetMenu(fileName = "New Tower", menuName = "Towers/Tower Data")]
 public class TowerData : ScriptableObject
 {
     [Header("Tower Info")]
     public string towerName;
     public GameObject towerPrefab;
-
-    [Header("Building Stats")]
     public int buildCost;
 
-    [Header("Combat Stats (All Towers)")]
-    public float range;
-    public float fireRate; // For Turret/Mortar
-    public int shotsUntilBreakdown;
-
-    [Header("Combat Stats (Flamethrower Only)")]
-    public float damagePerSecond;
-    public float flameAngle;
+    [Header("Upgrade Path")]
+    // This array will hold all the upgrade levels. Level 0 is the base tower.
+    public TowerUpgradeLevel[] upgradeLevels;
 }
-

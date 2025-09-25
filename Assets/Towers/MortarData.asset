@@ -15,8 +15,11 @@ MonoBehaviour:
   towerName: Mortar
   towerPrefab: {fileID: 3018731610427257067, guid: e28ba90cd1a1e5e4fab3a695ba9260bf, type: 3}
   buildCost: 80
-  range: 8
-  fireRate: 0.5
-  shotsUntilBreakdown: 3
-  damagePerSecond: 0
-  flameAngle: 0
+  upgradeLevels:
+  - upgradeCost: 0
+    range: 8
+    fireRate: 0.6
+    shotsUntilBreakdown: 15
+    projectileDamage: 7
+    damagePerSecond: 0
+    flameAngle: 0

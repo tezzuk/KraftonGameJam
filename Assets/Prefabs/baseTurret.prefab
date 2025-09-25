@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 5662029967625352666}
   - component: {fileID: 306981460764027082}
   - component: {fileID: 1909297068944652664}
+  - component: {fileID: -5645587213935135652}
   m_Layer: 6
   m_Name: baseTurret
   m_TagString: Untagged
@@ -311,7 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8698e1be57ebb4c98d507f3920c051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Turret
-  towerData: {fileID: 11400000, guid: 78c6714f2a539784c97d49417331654b, type: 2}
   partToRotate: {fileID: 8477686135726580692}
   projectilePrefab: {fileID: 1918588925184424155, guid: 634a6bd0220cf1b4fbaddc3ef2150b09, type: 3}
   firePoint: {fileID: 6084752994719642371}
@@ -420,6 +420,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5645587213935135652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759297393188124729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304a5909f0c9aea4eb45f4f1544f192e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgrader
+  towerData: {fileID: 11400000, guid: 78c6714f2a539784c97d49417331654b, type: 2}
 --- !u!1 &6318087035446129037
 GameObject:
   m_ObjectHideFlags: 0

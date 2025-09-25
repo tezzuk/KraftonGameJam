@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class BuildManager : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class BuildManager : MonoBehaviour
     public LayerMask invalidPlacementLayer;
     public LayerMask clickableLayer;
     public GameObject rangePreviewPrefab;
+    public UpgradePanelUI upgradePanel;
 
     // State variables
-    private TowerData selectedTower;
+    private TowerData selectedTowerToBuild;
     private GameObject towerPreviewInstance;
     private GameObject towerToReposition;
+    private GameObject selectedTowerForUpgrade;
     private SpriteRenderer previewSpriteRenderer;
 
     void Awake()
@@ -30,6 +33,11 @@ public class BuildManager : MonoBehaviour
             return;
         }
 
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         if (towerToReposition != null)
         {
             HandleRepositioning();
@@ -39,6 +47,36 @@ public class BuildManager : MonoBehaviour
             HandleNewTowerPlacement();
         }
         else
+        {
+            HandleTowerInteraction();
+        }
+
+        if (Mouse.current.rightButton.wasPressedThisFrame && towerPreviewInstance == null && towerToReposition == null && selectedTowerForUpgrade != null)
+        {
+            CancelActions();
+        }
+    }
+
+    void HandleTowerInteraction()
+    {
+        if (Mouse.current == null) return;
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, clickableLayer);
+
+            if (hit.collider != null && hit.collider.GetComponent<TowerUpgrader>() != null)
+            {
+                SelectTowerForUpgrade(hit.collider.gameObject);
+            }
+            else
+            {
+                CancelActions();
+            }
+        }
+
+        if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             CheckForRepositionStart();
         }
@@ -51,15 +89,15 @@ public class BuildManager : MonoBehaviour
             Debug.Log("Not enough currency!");
             return;
         }
-        
+
         CancelActions();
 
-        selectedTower = tower;
-        towerPreviewInstance = Instantiate(selectedTower.towerPrefab);
+        selectedTowerToBuild = tower;
+        towerPreviewInstance = Instantiate(selectedTowerToBuild.towerPrefab);
         previewSpriteRenderer = towerPreviewInstance.GetComponentInChildren<SpriteRenderer>();
-        CreateRangePreview(tower.range, towerPreviewInstance.transform);
+        CreateRangePreview(selectedTowerToBuild.upgradeLevels[0].range, towerPreviewInstance.transform);
 
-        // Disable all possible tower scripts on the preview
+        if (towerPreviewInstance.TryGetComponent<TowerUpgrader>(out TowerUpgrader upgrader)) upgrader.enabled = false;
         if (towerPreviewInstance.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
         if (towerPreviewInstance.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
         if (towerPreviewInstance.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
@@ -67,37 +105,86 @@ public class BuildManager : MonoBehaviour
         if (detector != null) detector.enabled = false;
     }
 
+    void PlaceTower(Vector3 position)
+    {
+        GameManager.instance.SpendCurrency(selectedTowerToBuild.buildCost);
+        Destroy(towerPreviewInstance);
+
+        GameObject newTower = Instantiate(selectedTowerToBuild.towerPrefab, position, Quaternion.identity);
+
+        if (newTower.TryGetComponent<TowerUpgrader>(out TowerUpgrader upgrader))
+        {
+            upgrader.towerData = selectedTowerToBuild;
+        }
+
+        CancelActions();
+    }
+
+    public void SelectTowerForUpgrade(GameObject tower)
+    {
+        if (tower == selectedTowerForUpgrade) return;
+
+        CancelActions();
+        selectedTowerForUpgrade = tower;
+        upgradePanel.Show(selectedTowerForUpgrade.GetComponent<TowerUpgrader>());
+        CreateRangePreview(selectedTowerForUpgrade.GetComponent<TowerUpgrader>().GetCurrentLevelStats().range, selectedTowerForUpgrade.transform);
+    }
+
+    public void CancelActions()
+    {
+        if (towerPreviewInstance != null)
+        {
+            Destroy(towerPreviewInstance);
+            towerPreviewInstance = null;
+        }
+        if (towerToReposition != null)
+        {
+            FinalizeRepositioning();
+        }
+        if (selectedTowerForUpgrade != null)
+        {
+            foreach (Transform child in selectedTowerForUpgrade.transform)
+            {
+                if (child.name.Contains("RangeIndicator"))
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+            selectedTowerForUpgrade = null;
+        }
+
+        selectedTowerToBuild = null;
+        if (upgradePanel != null) upgradePanel.Hide();
+    }
+
+    // --- CORRECTED REPOSITIONING LOGIC ---
+
     void CheckForRepositionStart()
     {
-        if (Mouse.current == null) return;
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, clickableLayer);
 
-        if (Mouse.current.rightButton.wasPressedThisFrame)
+        if (hit.collider != null)
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, clickableLayer);
-
-            if (hit.collider != null)
+            if (hit.collider.TryGetComponent<TowerUpgrader>(out TowerUpgrader upgrader))
             {
-                TowerData data = null;
-                // Check for all tower types to get their data asset
-                if (hit.collider.TryGetComponent<Turret>(out Turret turret)) data = turret.towerData;
-                if (hit.collider.TryGetComponent<Mortar>(out Mortar mortar)) data = mortar.towerData;
-                if (hit.collider.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) data = flamethrower.towerData;
-
-                if (data != null)
-                {
-                    StartRepositioning(hit.collider.gameObject, data.range);
-                }
+                // Get the range from the TowerUpgrader, not from the old towerData variable.
+                float currentRange = upgrader.GetCurrentLevelStats().range;
+                StartRepositioning(hit.collider.gameObject, currentRange);
             }
         }
     }
 
     void StartRepositioning(GameObject tower, float range)
     {
+        CancelActions(); // Cancel any other action, like upgrade selection
+
         towerToReposition = tower;
         previewSpriteRenderer = towerToReposition.GetComponentInChildren<SpriteRenderer>();
         CreateRangePreview(range, towerToReposition.transform);
-        
+
+        // Disable all tower components during repositioning
+        if (tower.TryGetComponent<TowerUpgrader>(out TowerUpgrader upgrader)) upgrader.enabled = false;
         if (tower.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
         if (tower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
         if (tower.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
@@ -121,15 +208,17 @@ public class BuildManager : MonoBehaviour
 
     void FinalizeRepositioning()
     {
-        if (towerToReposition.transform.childCount > 0)
+        // Remove the temporary range indicator visual
+        foreach (Transform child in towerToReposition.transform)
         {
-           foreach (Transform child in towerToReposition.transform) {
-               if(child.name.Contains("RangeIndicator")){
-                   Destroy(child.gameObject);
-               }
-           }
+            if (child.name.Contains("RangeIndicator"))
+            {
+                Destroy(child.gameObject);
+            }
         }
-        
+
+        // Re-enable all the tower's components
+        if (towerToReposition.TryGetComponent<TowerUpgrader>(out TowerUpgrader upgrader)) upgrader.enabled = true;
         if (towerToReposition.TryGetComponent<Turret>(out Turret turret)) turret.enabled = true;
         if (towerToReposition.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = true;
         if (towerToReposition.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = true;
@@ -155,20 +244,6 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    void PlaceTower(Vector3 position)
-    {
-        GameManager.instance.SpendCurrency(selectedTower.buildCost);
-        Destroy(towerPreviewInstance);
-        
-        GameObject newTower = Instantiate(selectedTower.towerPrefab, position, Quaternion.identity);
-        // Pass the TowerData asset to the newly created tower
-        if (newTower.TryGetComponent<Turret>(out Turret turret)) turret.towerData = selectedTower;
-        if (newTower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.towerData = selectedTower;
-        if (newTower.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.towerData = selectedTower;
-        
-        CancelActions();
-    }
-
     void CreateRangePreview(float range, Transform parent)
     {
         if (rangePreviewPrefab != null)
@@ -180,25 +255,11 @@ public class BuildManager : MonoBehaviour
             rangeVisual.transform.localScale = new Vector3(diameter, diameter, 1f);
         }
     }
-    
+
     bool IsValidPlacement(Vector3 position)
     {
         Collider2D overlap = Physics2D.OverlapCircle(position, 0.5f, invalidPlacementLayer);
         return overlap == null;
-    }
-
-    void CancelActions()
-    {
-        if (towerPreviewInstance != null)
-        {
-            Destroy(towerPreviewInstance);
-            towerPreviewInstance = null;
-        }
-        if (towerToReposition != null)
-        {
-            FinalizeRepositioning();
-        }
-        selectedTower = null;
     }
 }
 

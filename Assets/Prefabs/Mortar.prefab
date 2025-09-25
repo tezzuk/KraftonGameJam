@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 6506852310390775097}
   - component: {fileID: 682867222330676343}
   - component: {fileID: 6515576573477623934}
+  - component: {fileID: -1767734846862392681}
   m_Layer: 6
   m_Name: Mortar
   m_TagString: Untagged
@@ -228,7 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1900577f73aebe949ba6cbde529db52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  towerData: {fileID: 11400000, guid: b700e8c200776624a885d8f4813bfcc4, type: 2}
   projectilePrefab: {fileID: 8804762272596218422, guid: a43ea8be63742ed40bca06acada513d3, type: 3}
   firePoint: {fileID: 928483175792654404}
   isBrokenDown: 0
@@ -278,6 +278,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.85041463, y: 1.022897}
   m_EdgeRadius: 0
+--- !u!114 &-1767734846862392681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018731610427257067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304a5909f0c9aea4eb45f4f1544f192e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgrader
+  towerData: {fileID: 11400000, guid: b700e8c200776624a885d8f4813bfcc4, type: 2}
 --- !u!1 &4151851048163973487
 GameObject:
   m_ObjectHideFlags: 0

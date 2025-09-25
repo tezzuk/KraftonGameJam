@@ -2834,8 +2834,8 @@ MonoBehaviour:
   animationName: redEffect
   waveSpawner: {fileID: 67388299}
   crystalHealth: 10
-  startingCurrency: 150
-  buildPhaseTime: 7
+  startingCurrency: 5000
+  buildPhaseTime: 15
   rewindsPerWave: 1
   waveIndex: 1
   rewindsAvailable: 0
@@ -2878,6 +2878,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rangePreviewPrefab: {fileID: 9087752484835106284, guid: 6f7880ae48b668945ad288156e6dd100, type: 3}
+  upgradePanel: {fileID: 0}
 --- !u!1 &452870831
 GameObject:
   m_ObjectHideFlags: 0

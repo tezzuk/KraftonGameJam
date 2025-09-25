@@ -1,20 +1,22 @@
 using UnityEngine;
-using System.Collections.Generic; // <-- ADD THIS LINE
+using System.Collections.Generic;
 
 public class Flamethrower : MonoBehaviour
 {
     [Header("Setup")]
-    public TowerData towerData; // The single source of truth for all stats
     public Transform partToRotate;
-    public ParticleSystem flameEffect; // The flame particle system visual
+    public ParticleSystem flameEffect;
 
-    [Header("Live Stats")]
+    [Header("Live Stats (Set by Upgrader)")]
+    private float damagePerSecond;
+    private float flameAngle;
+    private float secondsUntilBreakdown; // Note: 'shotsUntilBreakdown' from data is used for this
+
     public bool isBrokenDown = false;
-    private float usageTime = 0; // Tracks seconds of use for the fragile mechanic
-    
-    // --- Private variables ---
+    private float usageTime = 0;
+
     private GameObject currentTarget = null;
-    private List<GameObject> targetsInRange = new List<GameObject>(); // <-- FIXED TYPO (Capital 'L')
+    private List<GameObject> targetsInRange = new List<GameObject>();
     private Color originalColor;
     private SpriteRenderer towerSpriteRenderer;
 
@@ -27,25 +29,19 @@ public class Flamethrower : MonoBehaviour
         {
             flameEffect.Stop();
         }
+    }
 
-        // --- AUTO-RANGE SETUP ---
-        // Find the RangeDetector child and set its collider radius from our TowerData
-        RangeDetector detector = GetComponentInChildren<RangeDetector>();
-        if (detector != null)
-        {
-            CircleCollider2D rangeCollider = detector.GetComponent<CircleCollider2D>();
-            if (rangeCollider != null)
-            {
-                rangeCollider.radius = towerData.range;
-            }
-        }
+    public void ApplyStats(TowerUpgradeLevel stats)
+    {
+        this.damagePerSecond = stats.damagePerSecond;
+        this.flameAngle = stats.flameAngle;
+        this.secondsUntilBreakdown = stats.shotsUntilBreakdown;
     }
 
     void Update()
     {
         if (isBrokenDown) return;
 
-        // Find a target if we don't have one
         if (currentTarget == null)
         {
             targetsInRange.RemoveAll(item => item == null);
@@ -55,7 +51,6 @@ public class Flamethrower : MonoBehaviour
             }
             else
             {
-                // If no targets are in range, turn off the flame effect
                 if (flameEffect != null && flameEffect.isPlaying)
                 {
                     flameEffect.Stop();
@@ -69,18 +64,15 @@ public class Flamethrower : MonoBehaviour
 
     void EngageTarget()
     {
-        // 1. Aim at the primary target
         Vector2 dir = currentTarget.transform.position - partToRotate.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         partToRotate.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
 
-        // 2. Turn on the flame effect
         if (flameEffect != null && !flameEffect.isPlaying)
         {
             flameEffect.Play();
         }
-        
-        // 3. Damage all enemies in the cone
+
         List<GameObject> currentTargets = new List<GameObject>(targetsInRange);
         foreach (GameObject enemyObject in currentTargets)
         {
@@ -88,26 +80,22 @@ public class Flamethrower : MonoBehaviour
 
             Vector2 directionToEnemy = enemyObject.transform.position - partToRotate.position;
 
-            // Assuming 'partToRotate.up' is the forward direction
-            if (Vector2.Angle(partToRotate.up, directionToEnemy) < towerData.flameAngle / 2)
+            if (Vector2.Angle(partToRotate.up, directionToEnemy) < flameAngle / 2)
             {
                 Enemy enemy = enemyObject.GetComponent<Enemy>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(towerData.damagePerSecond * Time.deltaTime);
+                    enemy.TakeDamage(damagePerSecond * Time.deltaTime);
                 }
             }
         }
-        
-        // 4. Update usage for fragile mechanic
+
         usageTime += Time.deltaTime;
-        if (usageTime >= towerData.shotsUntilBreakdown)
+        if (usageTime >= secondsUntilBreakdown)
         {
             BreakDown();
         }
     }
-
-    // --- Fragile and Rewind Methods ---
 
     void BreakDown()
     {
@@ -123,8 +111,6 @@ public class Flamethrower : MonoBehaviour
         if (towerSpriteRenderer != null) towerSpriteRenderer.color = originalColor;
     }
 
-    // --- Enemy Detection Methods (called by RangeDetector) ---
-
     public void OnEnemyEnteredRange(GameObject enemy)
     {
         if (enemy.CompareTag("Enemy") && !targetsInRange.Contains(enemy))
@@ -139,4 +125,3 @@ public class Flamethrower : MonoBehaviour
         if (enemy == currentTarget) currentTarget = null;
     }
 }
-

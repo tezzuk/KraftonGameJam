@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3110695835835557090}
   - component: {fileID: 4746907254202147981}
   - component: {fileID: 899951795464773398}
+  - component: {fileID: -5648200551265503172}
   m_Layer: 6
   m_Name: FlameThrower
   m_TagString: Untagged
@@ -49,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90954f7e43cbc994aa1ce99edd507eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  towerData: {fileID: 11400000, guid: 89eb84e3304023649bbda5b685e779f4, type: 2}
   partToRotate: {fileID: 7393866504071877862}
   flameEffect: {fileID: 254231097638588673}
   isBrokenDown: 0
@@ -99,6 +99,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.6323981}
   m_EdgeRadius: 0
+--- !u!114 &-5648200551265503172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043857286897600008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304a5909f0c9aea4eb45f4f1544f192e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgrader
+  towerData: {fileID: 11400000, guid: b700e8c200776624a885d8f4813bfcc4, type: 2}
 --- !u!1 &1510828741316550176
 GameObject:
   m_ObjectHideFlags: 0

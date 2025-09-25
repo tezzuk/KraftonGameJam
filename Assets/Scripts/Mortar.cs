@@ -4,40 +4,38 @@ using System.Collections.Generic;
 public class Mortar : MonoBehaviour
 {
     [Header("Setup")]
-    public TowerData towerData; // The single source of truth for all stats
     public GameObject projectilePrefab;
     public Transform firePoint;
 
-    [Header("Live Stats")]
+    [Header("Live Stats (Set by Upgrader)")]
+    private float range;
+    private float fireRate;
+    private int shotsUntilBreakdown;
+    private int projectileDamage;
+
     public bool isBrokenDown = false;
     private float fireCountdown = 0f;
     private int shotsFired = 0;
-    
-    // --- Private variables ---
+
     private GameObject currentTarget = null;
     private List<GameObject> targetsInRange = new List<GameObject>();
     private Color originalColor;
     private SpriteRenderer towerSpriteRenderer;
-    
+
     void Start()
     {
         towerSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (towerSpriteRenderer != null) originalColor = towerSpriteRenderer.color;
-
-        // --- AUTO-RANGE SETUP ---
-        // Find the RangeDetector child object and automatically set its
-        // collider radius based on the value in our TowerData asset.
-        RangeDetector detector = GetComponentInChildren<RangeDetector>();
-        if (detector != null)
-        {
-            CircleCollider2D rangeCollider = detector.GetComponent<CircleCollider2D>();
-            if (rangeCollider != null)
-            {
-                rangeCollider.radius = towerData.range;
-            }
-        }
     }
-    
+
+    public void ApplyStats(TowerUpgradeLevel stats)
+    {
+        this.range = stats.range;
+        this.fireRate = stats.fireRate;
+        this.shotsUntilBreakdown = stats.shotsUntilBreakdown;
+        this.projectileDamage = stats.projectileDamage;
+    }
+
     void Update()
     {
         if (isBrokenDown) return;
@@ -46,15 +44,13 @@ public class Mortar : MonoBehaviour
         {
             targetsInRange.RemoveAll(item => item == null);
             if (targetsInRange.Count > 0) currentTarget = targetsInRange[0];
-            else return; // No target, do nothing.
+            else return;
         }
-        
-        // Firing logic for the Mortar
+
         if (fireCountdown <= 0f)
         {
             Shoot();
-            // Read the fireRate from the TowerData asset
-            fireCountdown = 1f / towerData.fireRate;
+            fireCountdown = 1f / fireRate;
         }
         fireCountdown -= Time.deltaTime;
     }
@@ -65,18 +61,16 @@ public class Mortar : MonoBehaviour
         MortarShell shell = shellGO.GetComponent<MortarShell>();
         if (shell != null)
         {
+            shell.damage = this.projectileDamage;
             shell.SetTarget(currentTarget.transform);
         }
 
         shotsFired++;
-        // Read the shot capacity from the TowerData asset
-        if (shotsFired >= towerData.shotsUntilBreakdown)
+        if (shotsFired >= shotsUntilBreakdown)
         {
             BreakDown();
         }
     }
-
-    // --- Fragile and Rewind Methods ---
 
     void BreakDown()
     {
@@ -90,8 +84,6 @@ public class Mortar : MonoBehaviour
         shotsFired = 0;
         if (towerSpriteRenderer != null) towerSpriteRenderer.color = originalColor;
     }
-
-    // --- Enemy Detection Methods (called by RangeDetector) ---
 
     public void OnEnemyEnteredRange(GameObject enemy)
     {
@@ -107,4 +99,3 @@ public class Mortar : MonoBehaviour
         if (enemy == currentTarget) currentTarget = null;
     }
 }
-

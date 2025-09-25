@@ -1,42 +1,44 @@
 using UnityEngine;
 using System.Collections.Generic;
+
 public class Turret : MonoBehaviour
 {
     [Header("Setup")]
-    public TowerData towerData; // The single source of truth for stats
     public Transform partToRotate;
     public GameObject projectilePrefab;
     public Transform firePoint;
 
-    [Header("Live Stats")]
+    // These stats are now set by the TowerUpgrader
+    [Header("Live Stats (Set by Upgrader)")]
+    private float range;
+    private float fireRate;
+    private int shotsUntilBreakdown;
+    private int projectileDamage;
+
     public bool isBrokenDown = false;
     private float fireCountdown = 0f;
     private int shotsFired = 0;
-    
-    // --- The rest of the script is largely the same ---
+
     private GameObject currentTarget = null;
     private List<GameObject> targetsInRange = new List<GameObject>();
     private Color originalColor;
     private SpriteRenderer towerSpriteRenderer;
-    
+
     void Start()
     {
         towerSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (towerSpriteRenderer != null) originalColor = towerSpriteRenderer.color;
-
-        // --- NEW AUTO-RANGE SETUP ---
-        // Find the RangeDetector child and set its collider radius
-        RangeDetector detector = GetComponentInChildren<RangeDetector>();
-        if (detector != null)
-        {
-            CircleCollider2D rangeCollider = detector.GetComponent<CircleCollider2D>();
-            if (rangeCollider != null)
-            {
-                rangeCollider.radius = towerData.range;
-            }
-        }
     }
-    
+
+    // The TowerUpgrader will call this method to update the tower's stats.
+    public void ApplyStats(TowerUpgradeLevel stats)
+    {
+        this.range = stats.range;
+        this.fireRate = stats.fireRate;
+        this.shotsUntilBreakdown = stats.shotsUntilBreakdown;
+        this.projectileDamage = stats.projectileDamage;
+    }
+
     void Update()
     {
         if (isBrokenDown) return;
@@ -60,7 +62,7 @@ public class Turret : MonoBehaviour
         if (fireCountdown <= 0f)
         {
             Shoot();
-            fireCountdown = 1f / towerData.fireRate; // Use fireRate from TowerData
+            fireCountdown = 1f / fireRate;
         }
         fireCountdown -= Time.deltaTime;
     }
@@ -69,10 +71,15 @@ public class Turret : MonoBehaviour
     {
         GameObject projectileGO = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         Projectile projectile = projectileGO.GetComponent<Projectile>();
-        if (projectile != null) projectile.Seek(currentTarget.transform);
-        
+        if (projectile != null)
+        {
+            // IMPORTANT: Set the damage on the projectile
+            projectile.damage = this.projectileDamage;
+            projectile.Seek(currentTarget.transform);
+        }
+
         shotsFired++;
-        if (shotsFired >= towerData.shotsUntilBreakdown)
+        if (shotsFired >= shotsUntilBreakdown)
         {
             BreakDown();
         }

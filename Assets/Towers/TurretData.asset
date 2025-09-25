@@ -15,8 +15,11 @@ MonoBehaviour:
   towerName: Turret
   towerPrefab: {fileID: 5759297393188124729, guid: 355845d97be58884490ec563ac73d6e6, type: 3}
   buildCost: 50
-  range: 5
-  fireRate: 1.5
-  shotsUntilBreakdown: 10
-  damagePerSecond: 0
-  flameAngle: 0
+  upgradeLevels:
+  - upgradeCost: 0
+    range: 5
+    fireRate: 1.5
+    shotsUntilBreakdown: 150
+    projectileDamage: 4
+    damagePerSecond: 0
+    flameAngle: 0
