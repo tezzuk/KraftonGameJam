@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8eff5b581cde2124dadbbff197db68d9
+guid: 442d6ea02588de34894bff674af981de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7232218209100465296
-    second: Screenshot 2025-09-25 111205_0
+      213: 1128743885868508802
+    second: Screenshot 2025-09-25 223606_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screenshot 2025-09-25 111205_0
+      name: Screenshot 2025-09-25 223606_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2328
-        height: 1300
+        width: 1497
+        height: 823
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0948b8ba4200e5460800000000000000
-      internalID: 7232218209100465296
+      spriteID: 2862697759a1aaf00800000000000000
+      internalID: 1128743885868508802
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screenshot 2025-09-25 111205_0: 7232218209100465296
+      Screenshot 2025-09-25 223606_0: 1128743885868508802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
