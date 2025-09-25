@@ -129,7 +129,8 @@ public class BuildManager : MonoBehaviour
                }
            }
         }
-        
+                SoundManager.instance.PlayTowerPlaceSound();
+
         if (towerToReposition.TryGetComponent<Turret>(out Turret turret)) turret.enabled = true;
         if (towerToReposition.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = true;
         if (towerToReposition.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = true;
@@ -157,6 +158,8 @@ public class BuildManager : MonoBehaviour
 
     void PlaceTower(Vector3 position)
     {
+        
+        SoundManager.instance.PlayTowerPlaceSound();
         GameManager.instance.SpendCurrency(selectedTower.buildCost);
         Destroy(towerPreviewInstance);
         
