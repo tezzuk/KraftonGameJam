@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 
 public class SecondUIMnager : MonoBehaviour
@@ -20,11 +21,18 @@ public class SecondUIMnager : MonoBehaviour
     public void Tutorial()
     {
         TutorialPanel.SetActive(true);
+        panels[0].SetActive(true);
+
     }
     public void Close()
     {
         InstructionPanel.SetActive(false);
         TutorialPanel.SetActive(false);
+        currentIndex = 0;
+        for (int i = 0; i < panels.Length; i++)
+        {
+            panels[i].SetActive(false);
+        }
     }
     public void Replay()
     {
@@ -36,10 +44,40 @@ public class SecondUIMnager : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
-    public void next()
+
+    public GameObject[] panels;   // Assign your panels in order in the Inspector
+    private int currentIndex = 0;
+
+    public void ShowNextPanel()
     {
-        Debug.Log("next");
+        if (currentIndex < panels.Length - 1)
+        {
+            panels[currentIndex].SetActive(false);   // Hide current
+            currentIndex++;
+
+            panels[currentIndex].SetActive(true);    // Show next
+        }
     }
 
+    public void ShowPreviousPanel()
+    {
+        if (currentIndex > 0)
+        {
+            panels[currentIndex].SetActive(false);   // Hide current
+            currentIndex--;
 
+            panels[currentIndex].SetActive(true);    // Show previous
+        }
+    }
+    public float delay = 32f;
+    void Start()
+    {
+        StartCoroutine(WaitAndLoadScene());
+    }
+    IEnumerator WaitAndLoadScene()
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(2);
+    }
 }
+
