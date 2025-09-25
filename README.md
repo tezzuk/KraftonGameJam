@@ -1,21 +1,3 @@
-So The build Phase is the Time when you can place the towers just use the buttons given on the bottom to place them also u can reposition already place by clicking right mouse button to pick and then left mouse to place. 
-To make a connection first click on the Crystal(Yellow Diamond) and then click on the desired tower
-number of connection available can be seen on screen for turrent, mortor, firethrower.
-crystal have some health which reduced by 10% whenever an enemy enter the 
-everything will be output in the console to better understand 
-Iitially i have set the 1 turret and 1 mortar 1 firethrower limit to be placed
-turrent will give -2 damage on every hit. mortor will give -7 damage on each enemy who ever get collide, firethrower will give continuous damage of -2 per sec
-the build time is set to 15seconds for each wave of enemy
-in bulid time you can buy new turrent , mortor, firethrower using the money.
-money can be earned by damaging enemies.
-if the damage is considerable i.e. greater than 1 than it will pop up on the head of enemy and also enemy will freez for a little time (freezing effect shown by blue color of enemy)
-every parameter can be tweaked through thread manager , build manager , game manager
-system: window 
-two wave of enemies will come
-installation steps: unzip the folder and install using the exe file.
-enemy: two type of enemied 1. fast moving, 2. slow moving. in both wave they come in combine
-tutorial and instrutions can be seen at main menu.
-
 # 📘 README
 
 ## 🎮 Game Overview
