@@ -55,6 +55,7 @@ MonoBehaviour:
   healthText: {fileID: 0}
   gameManager: {fileID: 0}
   timeCrystal: {fileID: 0}
+  waveSpawner: {fileID: 0}
   animator: {fileID: 0}
   enemy: {fileID: 4024094317869569895, guid: 60de0f8943cd0e642a4adb7fa04b0c26, type: 3}
   fuel: 0

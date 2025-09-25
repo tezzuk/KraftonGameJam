@@ -1,0 +1,6084 @@
+fileFormatVersion: 2
+guid: acf7a510e5b0c184a9d6cfb60f5a77c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4984933426043875976
+    second: creatures_transparent_0
+  - first:
+      213: -5265290636571116597
+    second: creatures_transparent_1
+  - first:
+      213: 8792661062228732248
+    second: creatures_transparent_2
+  - first:
+      213: -4897118300855534091
+    second: creatures_transparent_3
+  - first:
+      213: -3152277620822861627
+    second: creatures_transparent_4
+  - first:
+      213: 4930216669744385740
+    second: creatures_transparent_5
+  - first:
+      213: 1069500973654871716
+    second: creatures_transparent_6
+  - first:
+      213: -2275481496050002644
+    second: creatures_transparent_7
+  - first:
+      213: 8698613602359646332
+    second: creatures_transparent_8
+  - first:
+      213: -2893795460478601223
+    second: creatures_transparent_9
+  - first:
+      213: -7323628063928634504
+    second: creatures_transparent_10
+  - first:
+      213: 2602706643093405015
+    second: creatures_transparent_11
+  - first:
+      213: -4620057903940381081
+    second: creatures_transparent_12
+  - first:
+      213: 7101974867189707971
+    second: creatures_transparent_13
+  - first:
+      213: 6842914806333751360
+    second: creatures_transparent_14
+  - first:
+      213: 3345789853528108186
+    second: creatures_transparent_15
+  - first:
+      213: -165498407481443191
+    second: creatures_transparent_16
+  - first:
+      213: 9223228383498209193
+    second: creatures_transparent_17
+  - first:
+      213: -3964618694354853193
+    second: creatures_transparent_18
+  - first:
+      213: -3542536036801490707
+    second: creatures_transparent_19
+  - first:
+      213: -5219678667602959369
+    second: creatures_transparent_20
+  - first:
+      213: 215336340856382573
+    second: creatures_transparent_21
+  - first:
+      213: -8856622921304686002
+    second: creatures_transparent_22
+  - first:
+      213: 7426387909546390464
+    second: creatures_transparent_23
+  - first:
+      213: -1839446490881909211
+    second: creatures_transparent_24
+  - first:
+      213: -6312100376179236475
+    second: creatures_transparent_25
+  - first:
+      213: 485189527766550012
+    second: creatures_transparent_26
+  - first:
+      213: 3008325452638381071
+    second: creatures_transparent_27
+  - first:
+      213: -4010813709863288691
+    second: creatures_transparent_28
+  - first:
+      213: -1872799741333991304
+    second: creatures_transparent_29
+  - first:
+      213: -4727764499523104819
+    second: creatures_transparent_30
+  - first:
+      213: 713547411815774723
+    second: creatures_transparent_31
+  - first:
+      213: -3678341437067458530
+    second: creatures_transparent_32
+  - first:
+      213: -9107697608177210438
+    second: creatures_transparent_33
+  - first:
+      213: 7612547855302667995
+    second: creatures_transparent_34
+  - first:
+      213: -4663708538014549961
+    second: creatures_transparent_35
+  - first:
+      213: -8854267628144836546
+    second: creatures_transparent_36
+  - first:
+      213: -926193258731687212
+    second: creatures_transparent_37
+  - first:
+      213: 7344842720993868477
+    second: creatures_transparent_38
+  - first:
+      213: 3505122135064654551
+    second: creatures_transparent_39
+  - first:
+      213: 7363626527895762843
+    second: creatures_transparent_40
+  - first:
+      213: 2346097467627921715
+    second: creatures_transparent_41
+  - first:
+      213: -6639225093400166599
+    second: creatures_transparent_42
+  - first:
+      213: 4931052430595721925
+    second: creatures_transparent_43
+  - first:
+      213: 6808615769779647758
+    second: creatures_transparent_44
+  - first:
+      213: -5659146507078621003
+    second: creatures_transparent_45
+  - first:
+      213: 6492247774112216157
+    second: creatures_transparent_46
+  - first:
+      213: 8958084180071210390
+    second: creatures_transparent_47
+  - first:
+      213: -5900456294057668292
+    second: creatures_transparent_48
+  - first:
+      213: 3316740378466780117
+    second: creatures_transparent_49
+  - first:
+      213: 4810167211967209397
+    second: creatures_transparent_50
+  - first:
+      213: 8657399787420156791
+    second: creatures_transparent_51
+  - first:
+      213: -9054672108326190809
+    second: creatures_transparent_52
+  - first:
+      213: -3768108914527848877
+    second: creatures_transparent_53
+  - first:
+      213: 8769208409516024959
+    second: creatures_transparent_54
+  - first:
+      213: -4290156779031578968
+    second: creatures_transparent_55
+  - first:
+      213: 6621046030591463868
+    second: creatures_transparent_56
+  - first:
+      213: 7827768969377274709
+    second: creatures_transparent_57
+  - first:
+      213: 8659313420286742661
+    second: creatures_transparent_58
+  - first:
+      213: 4168964803057760864
+    second: creatures_transparent_59
+  - first:
+      213: 6004542188644230539
+    second: creatures_transparent_60
+  - first:
+      213: 392793919323097233
+    second: creatures_transparent_61
+  - first:
+      213: -189845476556995168
+    second: creatures_transparent_62
+  - first:
+      213: 632597994497245816
+    second: creatures_transparent_63
+  - first:
+      213: -6662003861303341698
+    second: creatures_transparent_64
+  - first:
+      213: -2521497245886468654
+    second: creatures_transparent_65
+  - first:
+      213: 435857956527165114
+    second: creatures_transparent_66
+  - first:
+      213: -1559102006196844195
+    second: creatures_transparent_67
+  - first:
+      213: -1383341748224286098
+    second: creatures_transparent_68
+  - first:
+      213: 8065443139652050690
+    second: creatures_transparent_69
+  - first:
+      213: -3362044138494405597
+    second: creatures_transparent_70
+  - first:
+      213: 6329693039445551750
+    second: creatures_transparent_71
+  - first:
+      213: 257856323837371005
+    second: creatures_transparent_72
+  - first:
+      213: 4690858292017904747
+    second: creatures_transparent_73
+  - first:
+      213: -658369778231442566
+    second: creatures_transparent_74
+  - first:
+      213: 178821238574256818
+    second: creatures_transparent_75
+  - first:
+      213: -3052915114926117712
+    second: creatures_transparent_76
+  - first:
+      213: -1195477235349082536
+    second: creatures_transparent_77
+  - first:
+      213: -2909236229730283641
+    second: creatures_transparent_78
+  - first:
+      213: -5990101771514698150
+    second: creatures_transparent_79
+  - first:
+      213: -4485503082283605770
+    second: creatures_transparent_80
+  - first:
+      213: 1558221497266378345
+    second: creatures_transparent_81
+  - first:
+      213: 4064692708908363726
+    second: creatures_transparent_82
+  - first:
+      213: -8892106184850383669
+    second: creatures_transparent_83
+  - first:
+      213: 3446692663849949452
+    second: creatures_transparent_84
+  - first:
+      213: 419358395703887533
+    second: creatures_transparent_85
+  - first:
+      213: -4593854246204000361
+    second: creatures_transparent_86
+  - first:
+      213: 5899927618251172035
+    second: creatures_transparent_87
+  - first:
+      213: 2783306184452778639
+    second: creatures_transparent_88
+  - first:
+      213: -5708617788777883914
+    second: creatures_transparent_89
+  - first:
+      213: 8559711886618907761
+    second: creatures_transparent_90
+  - first:
+      213: -8559172087063554566
+    second: creatures_transparent_91
+  - first:
+      213: -7307121179585625002
+    second: creatures_transparent_92
+  - first:
+      213: -4397786940867069761
+    second: creatures_transparent_93
+  - first:
+      213: -8488107765020603285
+    second: creatures_transparent_94
+  - first:
+      213: 176049208288958249
+    second: creatures_transparent_95
+  - first:
+      213: -2954822381602854308
+    second: creatures_transparent_96
+  - first:
+      213: 2724909589788572873
+    second: creatures_transparent_97
+  - first:
+      213: 5180579723484214008
+    second: creatures_transparent_98
+  - first:
+      213: 4923189524583033283
+    second: creatures_transparent_99
+  - first:
+      213: -6385719234183321952
+    second: creatures_transparent_100
+  - first:
+      213: -1521073462452774551
+    second: creatures_transparent_101
+  - first:
+      213: 1939082295391930485
+    second: creatures_transparent_102
+  - first:
+      213: 6597352222063468622
+    second: creatures_transparent_103
+  - first:
+      213: -973791417188079878
+    second: creatures_transparent_104
+  - first:
+      213: -8108383659517791448
+    second: creatures_transparent_105
+  - first:
+      213: -99843577907167708
+    second: creatures_transparent_106
+  - first:
+      213: 126336471079942024
+    second: creatures_transparent_107
+  - first:
+      213: -9133692275761140715
+    second: creatures_transparent_108
+  - first:
+      213: 9001609703512722351
+    second: creatures_transparent_109
+  - first:
+      213: -343942462835482805
+    second: creatures_transparent_110
+  - first:
+      213: 4404650273744474654
+    second: creatures_transparent_111
+  - first:
+      213: 1175762809362888076
+    second: creatures_transparent_112
+  - first:
+      213: -7550510525926141700
+    second: creatures_transparent_113
+  - first:
+      213: -1894533200634293123
+    second: creatures_transparent_114
+  - first:
+      213: 1576110154903921584
+    second: creatures_transparent_115
+  - first:
+      213: 8973733090758985958
+    second: creatures_transparent_116
+  - first:
+      213: -891236943405006247
+    second: creatures_transparent_117
+  - first:
+      213: -7542011784196644319
+    second: creatures_transparent_118
+  - first:
+      213: -4030723149137327502
+    second: creatures_transparent_119
+  - first:
+      213: -5927719661063761800
+    second: creatures_transparent_120
+  - first:
+      213: -4698696723947425228
+    second: creatures_transparent_121
+  - first:
+      213: 5779388098849442719
+    second: creatures_transparent_122
+  - first:
+      213: 2812705315138018473
+    second: creatures_transparent_123
+  - first:
+      213: -9121199619143135033
+    second: creatures_transparent_124
+  - first:
+      213: 7436157504071539235
+    second: creatures_transparent_125
+  - first:
+      213: -7306742433941689326
+    second: creatures_transparent_126
+  - first:
+      213: -6256144506633106883
+    second: creatures_transparent_127
+  - first:
+      213: -3322423554605675620
+    second: creatures_transparent_128
+  - first:
+      213: 2812191848407042245
+    second: creatures_transparent_129
+  - first:
+      213: 8247059121624977603
+    second: creatures_transparent_130
+  - first:
+      213: -3907504038078071507
+    second: creatures_transparent_131
+  - first:
+      213: 6388126957221600968
+    second: creatures_transparent_132
+  - first:
+      213: 304375463168246367
+    second: creatures_transparent_133
+  - first:
+      213: 8909220823974849398
+    second: creatures_transparent_134
+  - first:
+      213: -8056129096070941715
+    second: creatures_transparent_135
+  - first:
+      213: 7174118383839294449
+    second: creatures_transparent_136
+  - first:
+      213: 3608707354982918332
+    second: creatures_transparent_137
+  - first:
+      213: -156549748102092660
+    second: creatures_transparent_138
+  - first:
+      213: -3670927890410183481
+    second: creatures_transparent_139
+  - first:
+      213: 8731735088334689891
+    second: creatures_transparent_140
+  - first:
+      213: -3941585399408199118
+    second: creatures_transparent_141
+  - first:
+      213: 7265516092435237336
+    second: creatures_transparent_142
+  - first:
+      213: -5769275095922661866
+    second: creatures_transparent_143
+  - first:
+      213: 6415544293544246555
+    second: creatures_transparent_144
+  - first:
+      213: 6084201339877398750
+    second: creatures_transparent_145
+  - first:
+      213: 2194404918251240771
+    second: creatures_transparent_146
+  - first:
+      213: -2805871419475266106
+    second: creatures_transparent_147
+  - first:
+      213: 4934038001505822693
+    second: creatures_transparent_148
+  - first:
+      213: -1224371733013211884
+    second: creatures_transparent_149
+  - first:
+      213: 8058961713630654251
+    second: creatures_transparent_150
+  - first:
+      213: -1100153489508650079
+    second: creatures_transparent_151
+  - first:
+      213: 3653173629029811980
+    second: creatures_transparent_152
+  - first:
+      213: 409669001043554246
+    second: creatures_transparent_153
+  - first:
+      213: 9142636205065030968
+    second: creatures_transparent_154
+  - first:
+      213: -7599608950942688913
+    second: creatures_transparent_155
+  - first:
+      213: 9181891567646370557
+    second: creatures_transparent_156
+  - first:
+      213: -6758642757892365390
+    second: creatures_transparent_157
+  - first:
+      213: -7235715829731869652
+    second: creatures_transparent_158
+  - first:
+      213: 1361153252025069633
+    second: creatures_transparent_159
+  - first:
+      213: -9013529753801369456
+    second: creatures_transparent_160
+  - first:
+      213: -6872030002471607960
+    second: creatures_transparent_161
+  - first:
+      213: 5638760581942296855
+    second: creatures_transparent_162
+  - first:
+      213: -6786668871087284537
+    second: creatures_transparent_163
+  - first:
+      213: -3152884277161381068
+    second: creatures_transparent_164
+  - first:
+      213: -4763955715982460937
+    second: creatures_transparent_165
+  - first:
+      213: -7972939395746790629
+    second: creatures_transparent_166
+  - first:
+      213: 8659586174953878624
+    second: creatures_transparent_167
+  - first:
+      213: 6135866678907446994
+    second: creatures_transparent_168
+  - first:
+      213: 76406279985288652
+    second: creatures_transparent_169
+  - first:
+      213: 8578839398380363887
+    second: creatures_transparent_170
+  - first:
+      213: 7207709565491084882
+    second: creatures_transparent_171
+  - first:
+      213: 6201711469633200307
+    second: creatures_transparent_172
+  - first:
+      213: -6241036716051011758
+    second: creatures_transparent_173
+  - first:
+      213: -111353598433523813
+    second: creatures_transparent_174
+  - first:
+      213: 3831253811198089930
+    second: creatures_transparent_175
+  - first:
+      213: 1468059705021604692
+    second: creatures_transparent_176
+  - first:
+      213: 8467575733977660044
+    second: creatures_transparent_177
+  - first:
+      213: 2865896155078760518
+    second: creatures_transparent_178
+  - first:
+      213: -174823278327472375
+    second: creatures_transparent_179
+  - first:
+      213: -480525777786085076
+    second: creatures_transparent_180
+  - first:
+      213: -4338683385791765945
+    second: creatures_transparent_181
+  - first:
+      213: -754794488575533143
+    second: creatures_transparent_182
+  - first:
+      213: 2654061273213330371
+    second: creatures_transparent_183
+  - first:
+      213: 610734507356832442
+    second: creatures_transparent_184
+  - first:
+      213: 8359300580469898264
+    second: creatures_transparent_185
+  - first:
+      213: -6702880940548779857
+    second: creatures_transparent_186
+  - first:
+      213: 7271123128640104082
+    second: creatures_transparent_187
+  - first:
+      213: 1516649284483372815
+    second: creatures_transparent_188
+  - first:
+      213: -7487466795941605533
+    second: creatures_transparent_189
+  - first:
+      213: -1576331803672380057
+    second: creatures_transparent_190
+  - first:
+      213: -2820462217456148849
+    second: creatures_transparent_191
+  - first:
+      213: -1927912066629413267
+    second: creatures_transparent_192
+  - first:
+      213: -5816264505299181738
+    second: creatures_transparent_193
+  - first:
+      213: -2050539887571719915
+    second: creatures_transparent_194
+  - first:
+      213: -6399611647634636776
+    second: creatures_transparent_195
+  - first:
+      213: 3640659387082655256
+    second: creatures_transparent_196
+  - first:
+      213: -2584716214690648721
+    second: creatures_transparent_197
+  - first:
+      213: -3529012573531804536
+    second: creatures_transparent_198
+  - first:
+      213: 1733551883550999479
+    second: creatures_transparent_199
+  - first:
+      213: 2886712962614406485
+    second: creatures_transparent_200
+  - first:
+      213: -3447702303340583112
+    second: creatures_transparent_201
+  - first:
+      213: -8013947459300365204
+    second: creatures_transparent_202
+  - first:
+      213: -7873682898722488654
+    second: creatures_transparent_203
+  - first:
+      213: 986598810323411834
+    second: creatures_transparent_204
+  - first:
+      213: 288085007505592246
+    second: creatures_transparent_205
+  - first:
+      213: -6945278201651234603
+    second: creatures_transparent_206
+  - first:
+      213: -6870771188670622824
+    second: creatures_transparent_207
+  - first:
+      213: -4905244245657849517
+    second: creatures_transparent_208
+  - first:
+      213: -18579156906793903
+    second: creatures_transparent_209
+  - first:
+      213: 1211099666933190197
+    second: creatures_transparent_210
+  - first:
+      213: -6049686715605782163
+    second: creatures_transparent_211
+  - first:
+      213: 2517875308183395164
+    second: creatures_transparent_212
+  - first:
+      213: 7276939486574188073
+    second: creatures_transparent_213
+  - first:
+      213: 4925629319413179895
+    second: creatures_transparent_214
+  - first:
+      213: 6581747997654805355
+    second: creatures_transparent_215
+  - first:
+      213: -7651231193847950452
+    second: creatures_transparent_216
+  - first:
+      213: -6066462571329436526
+    second: creatures_transparent_217
+  - first:
+      213: -7087464243201482564
+    second: creatures_transparent_218
+  - first:
+      213: 2846840266082084407
+    second: creatures_transparent_219
+  - first:
+      213: -3095048994539707169
+    second: creatures_transparent_220
+  - first:
+      213: -8119560967889557514
+    second: creatures_transparent_221
+  - first:
+      213: -6280246095631035294
+    second: creatures_transparent_222
+  - first:
+      213: 2439104550455997760
+    second: creatures_transparent_223
+  - first:
+      213: 4874700925109640148
+    second: creatures_transparent_224
+  - first:
+      213: 7224680653023625574
+    second: creatures_transparent_225
+  - first:
+      213: 1363744114577216228
+    second: creatures_transparent_226
+  - first:
+      213: -8333634452406338083
+    second: creatures_transparent_227
+  - first:
+      213: 3308428758431076004
+    second: creatures_transparent_228
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: creatures_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 307
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882f0582a8a0e2540800000000000000
+      internalID: 4984933426043875976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 304
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbfcff001eede6b0800000000000000
+      internalID: -5265290636571116597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 313
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8596d8c86aec50a70800000000000000
+      internalID: 8792661062228732248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 308
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdf076f9d0f90cb0800000000000000
+      internalID: -4897118300855534091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 292
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c89071943cd044d0800000000000000
+      internalID: -3152277620822861627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 313
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccec2d190f5ab6440800000000000000
+      internalID: 4930216669744385740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 308
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae02a51871a7de00800000000000000
+      internalID: 1069500973654871716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 300
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2517f6a2addb60e0800000000000000
+      internalID: -2275481496050002644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 311
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78170febfea7b870800000000000000
+      internalID: 8698613602359646332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 300
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7f8855c5c27d7d0800000000000000
+      internalID: -2893795460478601223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 311
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873b37ef31f3d5a90800000000000000
+      internalID: -7323628063928634504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 304
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75db124f6ebae1420800000000000000
+      internalID: 2602706643093405015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 304
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766d5e180d142efb0800000000000000
+      internalID: -4620057903940381081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 313
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4389a83884f8260800000000000000
+      internalID: 7101974867189707971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 300
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040c8c3d2cae6fe50800000000000000
+      internalID: 6842914806333751360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 313
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c26a02522ae6e20800000000000000
+      internalID: 3345789853528108186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 300
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cfc23431804bdf0800000000000000
+      internalID: -165498407481443191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a706b8195d7fff70800000000000000
+      internalID: 9223228383498209193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 314
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b22b1d8d48daf8c0800000000000000
+      internalID: -3964618694354853193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 309
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de05d626e3266dec0800000000000000
+      internalID: -3542536036801490707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 304
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f367d728e9ff87b0800000000000000
+      internalID: -5219678667602959369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 314
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d642af7d2470df200800000000000000
+      internalID: 215336340856382573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 309
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e424d02a064f61580800000000000000
+      internalID: -8856622921304686002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 304
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3b4c00574df0760800000000000000
+      internalID: 7426387909546390464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 314
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e15af8929f876e0800000000000000
+      internalID: -1839446490881909211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 304
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5812a3b962ae668a0800000000000000
+      internalID: -6312100376179236475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 303
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5c34b0e4dbbb600800000000000000
+      internalID: 485189527766550012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 303
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04e6457f08bfb920800000000000000
+      internalID: 3008325452638381071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80055b5e2ab658c0800000000000000
+      internalID: -4010813709863288691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 288
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870185ace8a7206e0800000000000000
+      internalID: -1872799741333991304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 292
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf09388c3b936eb0800000000000000
+      internalID: -4727764499523104819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 288
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30abdab279707e900800000000000000
+      internalID: 713547411815774723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 287
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e188ef0a3f7e3fcc0800000000000000
+      internalID: -3678341437067458530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 292
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb2ceea745fa9180800000000000000
+      internalID: -9107697608177210438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 287
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde2afef0f335a960800000000000000
+      internalID: 7612547855302667995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 287
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738bfa74bcd274fb0800000000000000
+      internalID: -4663708538014549961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 287
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30cf2e01825f1580800000000000000
+      internalID: -8854267628144836546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 287
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2bfeb63208523f0800000000000000
+      internalID: -926193258731687212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 287
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbaf3f34a8f1ee560800000000000000
+      internalID: 7344842720993868477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 287
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d233eac202b4a030800000000000000
+      internalID: 3505122135064654551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 287
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97bedd105bd03660800000000000000
+      internalID: 7363626527895762843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 287
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331e76677330f8020800000000000000
+      internalID: 2346097467627921715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 288
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ff50424fbbcd3a0800000000000000
+      internalID: -6639225093400166599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 297
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca0c7e4f0e9e6440800000000000000
+      internalID: 4931052430595721925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 288
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05b6d118ff0d7e50800000000000000
+      internalID: 6808615769779647758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 288
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8afa93c3ca671b0800000000000000
+      internalID: -5659146507078621003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 297
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5477c104f8191a50800000000000000
+      internalID: 6492247774112216157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69dd03d8912815c70800000000000000
+      internalID: 8958084180071210390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3199f3334e5d1ea0800000000000000
+      internalID: -5900456294057668292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d305b62dcd670e20800000000000000
+      internalID: 3316740378466780117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 249
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf598b089521c240800000000000000
+      internalID: 4810167211967209397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 256
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77388bfdc33452870800000000000000
+      internalID: 8657399787420156791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 239
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7218491f0b7575280800000000000000
+      internalID: -9054672108326190809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 256
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356b59218ecf4bbc0800000000000000
+      internalID: -3768108914527848877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 239
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f742292569c72b970800000000000000
+      internalID: 8769208409516024959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 266
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6b613c32d4674c0800000000000000
+      internalID: -4290156779031578968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 261
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb11ae6f84ea2eb50800000000000000
+      internalID: 6621046030591463868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 256
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bde838762d1ac60800000000000000
+      internalID: 7827768969377274709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580d6fe3daf0c2870800000000000000
+      internalID: 8659313420286742661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 239
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a3d5776632bd930800000000000000
+      internalID: 4168964803057760864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_60
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 262
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b856cf0ae4b645350800000000000000
+      internalID: 6004542188644230539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_61
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 240
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198cf2f0dfb737500800000000000000
+      internalID: 392793919323097233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_62
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a50b9f7b888d5df0800000000000000
+      internalID: -189845476556995168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_63
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 256
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87202ab368077c800800000000000000
+      internalID: 632597994497245816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_64
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 264
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dcbb2f8cecb83a0800000000000000
+      internalID: -6662003861303341698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_65
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 255
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddafc44d97d10dd0800000000000000
+      internalID: -2521497245886468654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 259
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe445f808a7c0600800000000000000
+      internalID: 435857956527165114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_67
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 248
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59c9006cf4fc5ae0800000000000000
+      internalID: -1559102006196844195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_68
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 266
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62af1e52026dcce0800000000000000
+      internalID: -1383341748224286098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_69
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 256
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f521f8dc53eef60800000000000000
+      internalID: 8065443139652050690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_70
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 259
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3245bdd3bae9751d0800000000000000
+      internalID: -3362044138494405597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_71
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 248
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a2a61884697d750800000000000000
+      internalID: 6329693039445551750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_72
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 260
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d722a69d5f6149300800000000000000
+      internalID: 257856323837371005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_73
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 256
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c3c6b63c6491140800000000000000
+      internalID: 4690858292017904747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_74
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 243
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7389a5cc200dd6f0800000000000000
+      internalID: -658369778231442566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_75
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 256
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2938318fc4b7200800000000000000
+      internalID: 178821238574256818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_76
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 239
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc6865c0edd1a5d0800000000000000
+      internalID: -3052915114926117712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_77
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 259
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ea3f1d9cfc86fe0800000000000000
+      internalID: -1195477235349082536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_78
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 249
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fca37101150a7d0800000000000000
+      internalID: -2909236229730283641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_79
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 242
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56ad6cfc22eedca0800000000000000
+      internalID: -5990101771514698150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_80
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 259
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0e09d36ba40c1c0800000000000000
+      internalID: -4485503082283605770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_81
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 259
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96690f9223aef9510800000000000000
+      internalID: 1558221497266378345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_82
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 247
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf6a9bab70b86830800000000000000
+      internalID: 4064692708908363726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_83
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 256
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc50fa8984e89480800000000000000
+      internalID: -8892106184850383669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_84
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0998b667bc15df20800000000000000
+      internalID: 3446692663849949452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_85
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 262
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da602813d3cd1d500800000000000000
+      internalID: 419358395703887533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_86
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 256
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797371107e95f30c0800000000000000
+      internalID: -4593854246204000361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_87
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 256
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8a06ed8e0c0e150800000000000000
+      internalID: 5899927618251172035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_88
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 256
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8aa4796a3a40a620800000000000000
+      internalID: 2783306184452778639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f61b6ddd5ae6c0b0800000000000000
+      internalID: -5708617788777883914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_90
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 239
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174db9d0c943ac670800000000000000
+      internalID: 8559711886618907761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_91
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 239
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af55323d556b73980800000000000000
+      internalID: -8559172087063554566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 245
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654c0108004e79a90800000000000000
+      internalID: -7307121179585625002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_93
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb834c7e31ce7f2c0800000000000000
+      internalID: -4397786940867069761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_94
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 239
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c46baa5fe243a80800000000000000
+      internalID: -8488107765020603285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_95
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 239
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9275d0b72d3717200800000000000000
+      internalID: 176049208288958249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_96
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 240
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a203203bc5ef6d0800000000000000
+      internalID: -2954822381602854308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_97
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 239
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc3760b5d2d0d520800000000000000
+      internalID: 2724909589788572873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_98
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 239
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f23ed48fcd15e740800000000000000
+      internalID: 5180579723484214008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_99
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 239
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c922b6d9cea25440800000000000000
+      internalID: 4923189524583033283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_100
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 239
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6af13803e5167a0800000000000000
+      internalID: -6385719234183321952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9699a31bebf04eae0800000000000000
+      internalID: -1521073462452774551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_102
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 217
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578c51fe21109ea10800000000000000
+      internalID: 1939082295391930485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_103
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 211
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e402a3644e08e8b50800000000000000
+      internalID: 6597352222063468622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_104
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 208
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af62e2d8dd56c72f0800000000000000
+      internalID: -973791417188079878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_105
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 217
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8233cdf850c397f80800000000000000
+      internalID: -8108383659517791448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_106
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 209
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e3dbd7bc84d9ef0800000000000000
+      internalID: -99843577907167708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_107
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 208
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88775e0e956d0c100800000000000000
+      internalID: 126336471079942024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_108
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c278f744b9e3180800000000000000
+      internalID: -9133692275761140715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_109
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabc59035542cec70800000000000000
+      internalID: 9001609703512722351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_110
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 208
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f948ff6221a3bf0800000000000000
+      internalID: -343942462835482805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_111
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 191
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12dd5e4616702d30800000000000000
+      internalID: 4404650273744474654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_112
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 208
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85b030bb06215010800000000000000
+      internalID: 1175762809362888076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_113
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 208
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf013555ea2373790800000000000000
+      internalID: -7550510525926141700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d745209771445b5e0800000000000000
+      internalID: -1894533200634293123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_115
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 207
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b32fe5d5d77fd510800000000000000
+      internalID: 1576110154903921584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_116
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 208
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e88bdf73ba198c70800000000000000
+      internalID: 8973733090758985958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_117
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 216
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952c3a1d8b0b1a3f0800000000000000
+      internalID: -891236943405006247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_118
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1222627dd34655790800000000000000
+      internalID: -7542011784196644319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ac9bbc6aeff08c0800000000000000
+      internalID: -4030723149137327502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_120
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870123aef528cbda0800000000000000
+      internalID: -5927719661063761800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_121
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 192
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43272dd6930eaceb0800000000000000
+      internalID: -4698696723947425228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_122
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 192
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b8a0bfad2843050800000000000000
+      internalID: 5779388098849442719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_123
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 192
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac97aee49cb80720800000000000000
+      internalID: 2812705315138018473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_124
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 193
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c09b87c54dfa6180800000000000000
+      internalID: -9121199619143135033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_125
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 196
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a1a0cf9d9823760800000000000000
+      internalID: 7436157504071539235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_126
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 195
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ce1a7187c399a90800000000000000
+      internalID: -7306742433941689326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_127
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 191
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a4f9ab7b5bd29a0800000000000000
+      internalID: -6256144506633106883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_128
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 208
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b865a416164e1d0800000000000000
+      internalID: -3322423554605675620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_129
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 208
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c80d842699e60720800000000000000
+      internalID: 2812191848407042245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_130
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 191
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c01a1a8390737270800000000000000
+      internalID: 8247059121624977603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_131
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 192
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2db3fbb7c1c5c9c0800000000000000
+      internalID: -3907504038078071507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_132
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 191
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce5a413f9f27a850800000000000000
+      internalID: 6388126957221600968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_133
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 191
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f520d700fdb593400800000000000000
+      internalID: 304375463168246367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_134
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 160
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ba886e229e3ab70800000000000000
+      internalID: 8909220823974849398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_135
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 167
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3b0043541e23090800000000000000
+      internalID: -8056129096070941715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_136
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 160
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f33755f8a69f8360800000000000000
+      internalID: 7174118383839294449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_137
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 167
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8a8183834b41230800000000000000
+      internalID: 3608707354982918332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_138
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 160
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88a2b265d2d3ddf0800000000000000
+      internalID: -156549748102092660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_139
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 167
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4e608788e3e0dc0800000000000000
+      internalID: -3670927890410183481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_140
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 160
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366d005dcca5d2970800000000000000
+      internalID: 8731735088334689891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a786076fcac49c0800000000000000
+      internalID: -3941585399408199118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_142
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d98c77446c44d460800000000000000
+      internalID: 7265516092435237336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_143
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616a5000eda6fefa0800000000000000
+      internalID: -5769275095922661866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_144
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d3d714b87980950800000000000000
+      internalID: 6415544293544246555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_145
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 160
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8195512ec6f6450800000000000000
+      internalID: 6084201339877398750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_146
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 160
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d3cbd85a7147e10800000000000000
+      internalID: 2194404918251240771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_147
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 160
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c571c46fca8f09d0800000000000000
+      internalID: -2805871419475266106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_148
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e76804bb69397440800000000000000
+      internalID: 4934038001505822693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_149
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 168
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415d7b45568220fe0800000000000000
+      internalID: -1224371733013211884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_150
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 160
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fad67fafe27df60800000000000000
+      internalID: 8058961713630654251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_151
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 160
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a33e6bea387bb0f0800000000000000
+      internalID: -1100153489508650079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_152
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 159
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07852d6f0ea2b230800000000000000
+      internalID: 3653173629029811980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_153
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfa0b239cf6fa500800000000000000
+      internalID: 409669001043554246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_154
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83dc681503b21ee70800000000000000
+      internalID: 9142636205065030968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_155
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f699e2f6ce3c88690800000000000000
+      internalID: -7599608950942688913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_156
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 144
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa67b7abb1ac6f70800000000000000
+      internalID: 9181891567646370557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_157
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b32f04783a7432a0800000000000000
+      internalID: -6758642757892365390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_158
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 143
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c39211ac2959b90800000000000000
+      internalID: -7235715829731869652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_159
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 147
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14072d7cba9c3e210800000000000000
+      internalID: 1361153252025069633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_160
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0985144d17289e280800000000000000
+      internalID: -9013529753801369456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_161
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 147
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8616ad05f15a1a0a0800000000000000
+      internalID: -6872030002471607960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_162
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 146
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7114524bfd6e04e40800000000000000
+      internalID: 5638760581942296855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_163
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 111
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce14aa7e98e0d1a0800000000000000
+      internalID: -6786668871087284537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_164
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433b1e16474be34d0800000000000000
+      internalID: -3152884277161381068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_165
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f77c2f448703edb0800000000000000
+      internalID: -4763955715982460937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_166
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 111
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b138bccacdd6a5190800000000000000
+      internalID: -7972939395746790629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_167
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 119
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0647204eeb70d2870800000000000000
+      internalID: 8659586174953878624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_168
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 112
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d62f693c3af62550800000000000000
+      internalID: 6135866678907446994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_169
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5d1295b137f0100800000000000000
+      internalID: 76406279985288652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_170
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 118
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60669deaf82e0770800000000000000
+      internalID: 8578839398380363887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_171
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 111
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ef74769ade60460800000000000000
+      internalID: 7207709565491084882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_172
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 117
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0e3fa39b7e01650800000000000000
+      internalID: 6201711469633200307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_173
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 122
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257eb955c226369a0800000000000000
+      internalID: -6241036716051011758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9788e00e74647ef0800000000000000
+      internalID: -111353598433523813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_175
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 111
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acad2dcda095b2530800000000000000
+      internalID: 3831253811198089930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_176
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 113
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453a0ea06889f5410800000000000000
+      internalID: 1468059705021604692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_177
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 80
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ab474544fd28570800000000000000
+      internalID: 8467575733977660044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_178
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64890ae6e55b5c720800000000000000
+      internalID: 2865896155078760518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_179
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 87
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f52d49727e29df0800000000000000
+      internalID: -174823278327472375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_180
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 84
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2164add954d459f0800000000000000
+      internalID: -480525777786085076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_181
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7422efca276e9c3c0800000000000000
+      internalID: -4338683385791765945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_182
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 91
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af5806696e6685f0800000000000000
+      internalID: -754794488575533143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_183
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 85
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3600a8aae15d420800000000000000
+      internalID: 2654061273213330371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_184
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2c3137cc3c97800800000000000000
+      internalID: 610734507356832442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_185
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cff95a693320470800000000000000
+      internalID: 8359300580469898264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_186
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 86
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa09ad64c459af2a0800000000000000
+      internalID: -6702880940548779857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_187
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 85
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29668b026f738e460800000000000000
+      internalID: 7271123128640104082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_188
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f075b7a1d783c0510800000000000000
+      internalID: 1516649284483372815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_189
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 79
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f4e509e9c271890800000000000000
+      internalID: -7487466795941605533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_190
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76df4f9839ebf1ae0800000000000000
+      internalID: -1576331803672380057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_191
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e9d128e84bbd8d0800000000000000
+      internalID: -2820462217456148849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_192
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 79
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d665d5e903eae35e0800000000000000
+      internalID: -1927912066629413267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_193
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 86
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fdde19f3a784fa0800000000000000
+      internalID: -5816264505299181738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_194
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 79
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519a48326d40b83e0800000000000000
+      internalID: -2050539887571719915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_195
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8100942fc130037a0800000000000000
+      internalID: -6399611647634636776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_196
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816c04b6c68368230800000000000000
+      internalID: 3640659387082655256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_197
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6deb221c4e312cd0800000000000000
+      internalID: -2584716214690648721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_198
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 63
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cefba03cd660fc0800000000000000
+      internalID: -3529012573531804536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_199
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 63
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b344cad040de0810800000000000000
+      internalID: 1733551883550999479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_200
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 64
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55da521252aaf0820800000000000000
+      internalID: 2886712962614406485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_201
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 80
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837a616950d4720d0800000000000000
+      internalID: -3447702303340583112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_202
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ce1c7de3db8c090800000000000000
+      internalID: -8013947459300365204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_203
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bef393ce1f0bb290800000000000000
+      internalID: -7873682898722488654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_204
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 80
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a736629046a11bd00800000000000000
+      internalID: 986598810323411834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_205
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf8c79b9cb7ff300800000000000000
+      internalID: 288085007505592246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_206
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 80
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d87054f54a6d9f90800000000000000
+      internalID: -6945278201651234603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_207
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8939c4eb10e16a0a0800000000000000
+      internalID: -6870771188670622824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_208
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 80
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351f80109521debb0800000000000000
+      internalID: -4905244245657849517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_209
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 63
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1542850fa5efdbff0800000000000000
+      internalID: -18579156906793903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_210
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 63
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e852bfab0bec010800000000000000
+      internalID: 1211099666933190197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_211
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61fae91cf13b0ca0800000000000000
+      internalID: -6049686715605782163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_212
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 48
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b9ff4a04a41f220800000000000000
+      internalID: 2517875308183395164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_213
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 54
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926944d78e1ecf460800000000000000
+      internalID: 7276939486574188073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_214
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f52fd6d4c95b5440800000000000000
+      internalID: 4925629319413179895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_215
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 48
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b6a59aee0175b50800000000000000
+      internalID: 6581747997654805355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_216
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c831e4464cd51d590800000000000000
+      internalID: -7651231193847950452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_217
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294c4b0de689fcba0800000000000000
+      internalID: -6066462571329436526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_218
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 64
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb061b162d444ad90800000000000000
+      internalID: -7087464243201482564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_219
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 63
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736e9188322028720800000000000000
+      internalID: 2846840266082084407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_220
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4e706765d2c05d0800000000000000
+      internalID: -3095048994539707169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_221
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 66
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7e0d8a156815f80800000000000000
+      internalID: -8119560967889557514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_222
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 63
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264d0ef337518d8a0800000000000000
+      internalID: -6280246095631035294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_223
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 66
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045f7fb6aa079d120800000000000000
+      internalID: 2439104550455997760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_224
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db9d630aaa66a340800000000000000
+      internalID: 4874700925109640148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_225
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 64
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6614c13a6c8334460800000000000000
+      internalID: 7224680653023625574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_226
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 65
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e297e9fb0efce210800000000000000
+      internalID: 1363744114577216228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_227
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 53
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddfc587e9bf85c80800000000000000
+      internalID: -8333634452406338083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creatures_transparent_228
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae88fe4d66e9ed20800000000000000
+      internalID: 3308428758431076004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      creatures_transparent_0: 4984933426043875976
+      creatures_transparent_1: -5265290636571116597
+      creatures_transparent_10: -7323628063928634504
+      creatures_transparent_100: -6385719234183321952
+      creatures_transparent_101: -1521073462452774551
+      creatures_transparent_102: 1939082295391930485
+      creatures_transparent_103: 6597352222063468622
+      creatures_transparent_104: -973791417188079878
+      creatures_transparent_105: -8108383659517791448
+      creatures_transparent_106: -99843577907167708
+      creatures_transparent_107: 126336471079942024
+      creatures_transparent_108: -9133692275761140715
+      creatures_transparent_109: 9001609703512722351
+      creatures_transparent_11: 2602706643093405015
+      creatures_transparent_110: -343942462835482805
+      creatures_transparent_111: 4404650273744474654
+      creatures_transparent_112: 1175762809362888076
+      creatures_transparent_113: -7550510525926141700
+      creatures_transparent_114: -1894533200634293123
+      creatures_transparent_115: 1576110154903921584
+      creatures_transparent_116: 8973733090758985958
+      creatures_transparent_117: -891236943405006247
+      creatures_transparent_118: -7542011784196644319
+      creatures_transparent_119: -4030723149137327502
+      creatures_transparent_12: -4620057903940381081
+      creatures_transparent_120: -5927719661063761800
+      creatures_transparent_121: -4698696723947425228
+      creatures_transparent_122: 5779388098849442719
+      creatures_transparent_123: 2812705315138018473
+      creatures_transparent_124: -9121199619143135033
+      creatures_transparent_125: 7436157504071539235
+      creatures_transparent_126: -7306742433941689326
+      creatures_transparent_127: -6256144506633106883
+      creatures_transparent_128: -3322423554605675620
+      creatures_transparent_129: 2812191848407042245
+      creatures_transparent_13: 7101974867189707971
+      creatures_transparent_130: 8247059121624977603
+      creatures_transparent_131: -3907504038078071507
+      creatures_transparent_132: 6388126957221600968
+      creatures_transparent_133: 304375463168246367
+      creatures_transparent_134: 8909220823974849398
+      creatures_transparent_135: -8056129096070941715
+      creatures_transparent_136: 7174118383839294449
+      creatures_transparent_137: 3608707354982918332
+      creatures_transparent_138: -156549748102092660
+      creatures_transparent_139: -3670927890410183481
+      creatures_transparent_14: 6842914806333751360
+      creatures_transparent_140: 8731735088334689891
+      creatures_transparent_141: -3941585399408199118
+      creatures_transparent_142: 7265516092435237336
+      creatures_transparent_143: -5769275095922661866
+      creatures_transparent_144: 6415544293544246555
+      creatures_transparent_145: 6084201339877398750
+      creatures_transparent_146: 2194404918251240771
+      creatures_transparent_147: -2805871419475266106
+      creatures_transparent_148: 4934038001505822693
+      creatures_transparent_149: -1224371733013211884
+      creatures_transparent_15: 3345789853528108186
+      creatures_transparent_150: 8058961713630654251
+      creatures_transparent_151: -1100153489508650079
+      creatures_transparent_152: 3653173629029811980
+      creatures_transparent_153: 409669001043554246
+      creatures_transparent_154: 9142636205065030968
+      creatures_transparent_155: -7599608950942688913
+      creatures_transparent_156: 9181891567646370557
+      creatures_transparent_157: -6758642757892365390
+      creatures_transparent_158: -7235715829731869652
+      creatures_transparent_159: 1361153252025069633
+      creatures_transparent_16: -165498407481443191
+      creatures_transparent_160: -9013529753801369456
+      creatures_transparent_161: -6872030002471607960
+      creatures_transparent_162: 5638760581942296855
+      creatures_transparent_163: -6786668871087284537
+      creatures_transparent_164: -3152884277161381068
+      creatures_transparent_165: -4763955715982460937
+      creatures_transparent_166: -7972939395746790629
+      creatures_transparent_167: 8659586174953878624
+      creatures_transparent_168: 6135866678907446994
+      creatures_transparent_169: 76406279985288652
+      creatures_transparent_17: 9223228383498209193
+      creatures_transparent_170: 8578839398380363887
+      creatures_transparent_171: 7207709565491084882
+      creatures_transparent_172: 6201711469633200307
+      creatures_transparent_173: -6241036716051011758
+      creatures_transparent_174: -111353598433523813
+      creatures_transparent_175: 3831253811198089930
+      creatures_transparent_176: 1468059705021604692
+      creatures_transparent_177: 8467575733977660044
+      creatures_transparent_178: 2865896155078760518
+      creatures_transparent_179: -174823278327472375
+      creatures_transparent_18: -3964618694354853193
+      creatures_transparent_180: -480525777786085076
+      creatures_transparent_181: -4338683385791765945
+      creatures_transparent_182: -754794488575533143
+      creatures_transparent_183: 2654061273213330371
+      creatures_transparent_184: 610734507356832442
+      creatures_transparent_185: 8359300580469898264
+      creatures_transparent_186: -6702880940548779857
+      creatures_transparent_187: 7271123128640104082
+      creatures_transparent_188: 1516649284483372815
+      creatures_transparent_189: -7487466795941605533
+      creatures_transparent_19: -3542536036801490707
+      creatures_transparent_190: -1576331803672380057
+      creatures_transparent_191: -2820462217456148849
+      creatures_transparent_192: -1927912066629413267
+      creatures_transparent_193: -5816264505299181738
+      creatures_transparent_194: -2050539887571719915
+      creatures_transparent_195: -6399611647634636776
+      creatures_transparent_196: 3640659387082655256
+      creatures_transparent_197: -2584716214690648721
+      creatures_transparent_198: -3529012573531804536
+      creatures_transparent_199: 1733551883550999479
+      creatures_transparent_2: 8792661062228732248
+      creatures_transparent_20: -5219678667602959369
+      creatures_transparent_200: 2886712962614406485
+      creatures_transparent_201: -3447702303340583112
+      creatures_transparent_202: -8013947459300365204
+      creatures_transparent_203: -7873682898722488654
+      creatures_transparent_204: 986598810323411834
+      creatures_transparent_205: 288085007505592246
+      creatures_transparent_206: -6945278201651234603
+      creatures_transparent_207: -6870771188670622824
+      creatures_transparent_208: -4905244245657849517
+      creatures_transparent_209: -18579156906793903
+      creatures_transparent_21: 215336340856382573
+      creatures_transparent_210: 1211099666933190197
+      creatures_transparent_211: -6049686715605782163
+      creatures_transparent_212: 2517875308183395164
+      creatures_transparent_213: 7276939486574188073
+      creatures_transparent_214: 4925629319413179895
+      creatures_transparent_215: 6581747997654805355
+      creatures_transparent_216: -7651231193847950452
+      creatures_transparent_217: -6066462571329436526
+      creatures_transparent_218: -7087464243201482564
+      creatures_transparent_219: 2846840266082084407
+      creatures_transparent_22: -8856622921304686002
+      creatures_transparent_220: -3095048994539707169
+      creatures_transparent_221: -8119560967889557514
+      creatures_transparent_222: -6280246095631035294
+      creatures_transparent_223: 2439104550455997760
+      creatures_transparent_224: 4874700925109640148
+      creatures_transparent_225: 7224680653023625574
+      creatures_transparent_226: 1363744114577216228
+      creatures_transparent_227: -8333634452406338083
+      creatures_transparent_228: 3308428758431076004
+      creatures_transparent_23: 7426387909546390464
+      creatures_transparent_24: -1839446490881909211
+      creatures_transparent_25: -6312100376179236475
+      creatures_transparent_26: 485189527766550012
+      creatures_transparent_27: 3008325452638381071
+      creatures_transparent_28: -4010813709863288691
+      creatures_transparent_29: -1872799741333991304
+      creatures_transparent_3: -4897118300855534091
+      creatures_transparent_30: -4727764499523104819
+      creatures_transparent_31: 713547411815774723
+      creatures_transparent_32: -3678341437067458530
+      creatures_transparent_33: -9107697608177210438
+      creatures_transparent_34: 7612547855302667995
+      creatures_transparent_35: -4663708538014549961
+      creatures_transparent_36: -8854267628144836546
+      creatures_transparent_37: -926193258731687212
+      creatures_transparent_38: 7344842720993868477
+      creatures_transparent_39: 3505122135064654551
+      creatures_transparent_4: -3152277620822861627
+      creatures_transparent_40: 7363626527895762843
+      creatures_transparent_41: 2346097467627921715
+      creatures_transparent_42: -6639225093400166599
+      creatures_transparent_43: 4931052430595721925
+      creatures_transparent_44: 6808615769779647758
+      creatures_transparent_45: -5659146507078621003
+      creatures_transparent_46: 6492247774112216157
+      creatures_transparent_47: 8958084180071210390
+      creatures_transparent_48: -5900456294057668292
+      creatures_transparent_49: 3316740378466780117
+      creatures_transparent_5: 4930216669744385740
+      creatures_transparent_50: 4810167211967209397
+      creatures_transparent_51: 8657399787420156791
+      creatures_transparent_52: -9054672108326190809
+      creatures_transparent_53: -3768108914527848877
+      creatures_transparent_54: 8769208409516024959
+      creatures_transparent_55: -4290156779031578968
+      creatures_transparent_56: 6621046030591463868
+      creatures_transparent_57: 7827768969377274709
+      creatures_transparent_58: 8659313420286742661
+      creatures_transparent_59: 4168964803057760864
+      creatures_transparent_6: 1069500973654871716
+      creatures_transparent_60: 6004542188644230539
+      creatures_transparent_61: 392793919323097233
+      creatures_transparent_62: -189845476556995168
+      creatures_transparent_63: 632597994497245816
+      creatures_transparent_64: -6662003861303341698
+      creatures_transparent_65: -2521497245886468654
+      creatures_transparent_66: 435857956527165114
+      creatures_transparent_67: -1559102006196844195
+      creatures_transparent_68: -1383341748224286098
+      creatures_transparent_69: 8065443139652050690
+      creatures_transparent_7: -2275481496050002644
+      creatures_transparent_70: -3362044138494405597
+      creatures_transparent_71: 6329693039445551750
+      creatures_transparent_72: 257856323837371005
+      creatures_transparent_73: 4690858292017904747
+      creatures_transparent_74: -658369778231442566
+      creatures_transparent_75: 178821238574256818
+      creatures_transparent_76: -3052915114926117712
+      creatures_transparent_77: -1195477235349082536
+      creatures_transparent_78: -2909236229730283641
+      creatures_transparent_79: -5990101771514698150
+      creatures_transparent_8: 8698613602359646332
+      creatures_transparent_80: -4485503082283605770
+      creatures_transparent_81: 1558221497266378345
+      creatures_transparent_82: 4064692708908363726
+      creatures_transparent_83: -8892106184850383669
+      creatures_transparent_84: 3446692663849949452
+      creatures_transparent_85: 419358395703887533
+      creatures_transparent_86: -4593854246204000361
+      creatures_transparent_87: 5899927618251172035
+      creatures_transparent_88: 2783306184452778639
+      creatures_transparent_89: -5708617788777883914
+      creatures_transparent_9: -2893795460478601223
+      creatures_transparent_90: 8559711886618907761
+      creatures_transparent_91: -8559172087063554566
+      creatures_transparent_92: -7307121179585625002
+      creatures_transparent_93: -4397786940867069761
+      creatures_transparent_94: -8488107765020603285
+      creatures_transparent_95: 176049208288958249
+      creatures_transparent_96: -2954822381602854308
+      creatures_transparent_97: 2724909589788572873
+      creatures_transparent_98: 5180579723484214008
+      creatures_transparent_99: 4923189524583033283
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
