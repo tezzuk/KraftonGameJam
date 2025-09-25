@@ -39,6 +39,9 @@ public class TimeCrystal : MonoBehaviour
         if (isRewinding) return;
         if (GameManager.instance.UseRewindCharge())
         {
+            SoundManager.instance.PlayRewindSound();
+
+
             StartCoroutine(RewindSequence());
         }
     }
@@ -110,6 +113,9 @@ public class TimeCrystal : MonoBehaviour
         {
             if (CanAffordConnection(tower))
             {
+                SoundManager.instance.PlayThreadConnectSound();
+
+
                 connectedTurrets.Add(tower);
                 CreateThreadVisual(tower);
             }
@@ -129,6 +135,9 @@ public class TimeCrystal : MonoBehaviour
         {
             if (CanAffordConnection(tower))
             {
+                SoundManager.instance.PlayThreadConnectSound();
+
+
                 connectedMortars.Add(tower);
                 CreateThreadVisual(tower);
             }
@@ -148,6 +157,9 @@ public class TimeCrystal : MonoBehaviour
         {
             if (CanAffordConnection(tower))
             {
+                SoundManager.instance.PlayThreadConnectSound();
+
+
                 connectedFlamethrowers.Add(tower);
                 CreateThreadVisual(tower);
             }

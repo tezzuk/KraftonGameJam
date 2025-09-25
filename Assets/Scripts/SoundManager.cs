@@ -13,10 +13,13 @@ public class SoundManager : MonoBehaviour
     public AudioClip enemyHitSound;
     public AudioClip enemyDeathSound;
     public AudioClip towerPlaceSound;
+    public AudioClip buttonClickSound; // <-- NEW: The sound for UI button clicks
+        public AudioClip threadConnectSound; 
 
     [Header("Music Clips")]
     public AudioClip buildPhaseMusic;
     public AudioClip defensePhaseMusic;
+    public AudioClip rewindSound; 
 
     void Awake()
     {
@@ -37,7 +40,7 @@ public class SoundManager : MonoBehaviour
     {
         if (enemyHitSound != null && sfxSource != null)
         {
-            sfxSource.PlayOneShot(enemyHitSound);
+            sfxSource.PlayOneShot(enemyHitSound , 3.0f);
         }
     }
 
@@ -45,7 +48,7 @@ public class SoundManager : MonoBehaviour
     {
         if (enemyDeathSound != null && sfxSource != null)
         {
-            sfxSource.PlayOneShot(enemyDeathSound);
+            sfxSource.PlayOneShot(enemyDeathSound , 2.0f);
         }
     }
 
@@ -56,37 +59,55 @@ public class SoundManager : MonoBehaviour
             sfxSource.PlayOneShot(towerPlaceSound);
         }
     }
+  public void PlayRewindSound()
+    {
+        if (rewindSound != null && sfxSource != null)
+        {
+            // --- THE CHANGE ---
+            // The second number (1.5f) is a volume multiplier.
+            // 1.0f is normal volume, 1.5f is 50% louder.
+            sfxSource.PlayOneShot(rewindSound, 1.5f);
+        }
+    }
+
+    public void PlayButtonClickSound()
+    {
+        if (buttonClickSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(buttonClickSound);
+        }
+    }
 
     // --- Music Control Methods ---
 
-    /// <summary>
-    /// Plays the music for the build phase.
-    /// </summary>
     public void PlayBuildMusic()
     {
         if (musicSource != null && buildPhaseMusic != null)
         {
-            // Check if the correct music is already playing to avoid restarting it
             if (musicSource.clip == buildPhaseMusic && musicSource.isPlaying) return;
-            
+
             musicSource.clip = buildPhaseMusic;
             musicSource.Play();
         }
     }
 
-    /// <summary>
-    /// Plays the music for the defense phase.
-    /// </summary>
     public void PlayDefenseMusic()
     {
         if (musicSource != null && defensePhaseMusic != null)
         {
-            // Check if the correct music is already playing
             if (musicSource.clip == defensePhaseMusic && musicSource.isPlaying) return;
 
             musicSource.clip = defensePhaseMusic;
             musicSource.Play();
         }
     }
+    public void PlayThreadConnectSound()
+    {
+        if (threadConnectSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(threadConnectSound);
+        }
+    }
+
 }
 

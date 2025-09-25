@@ -10,6 +10,8 @@ public class BuildManager : MonoBehaviour
     public LayerMask clickableLayer;
     public GameObject rangePreviewPrefab;
 
+    public bool IsPlacingOrRepositioning { get; private set; } = false;
+
     // State variables
     private TowerData selectedTower;
     private GameObject towerPreviewInstance;
@@ -44,46 +46,19 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    public void SelectTowerToBuild(TowerData tower)
-    {
-        if (GameManager.instance.currency < tower.buildCost)
-        {
-            Debug.Log("Not enough currency!");
-            return;
-        }
-        
-        CancelActions();
-
-        selectedTower = tower;
-        towerPreviewInstance = Instantiate(selectedTower.towerPrefab);
-        previewSpriteRenderer = towerPreviewInstance.GetComponentInChildren<SpriteRenderer>();
-        CreateRangePreview(tower.range, towerPreviewInstance.transform);
-
-        // Disable all possible tower scripts on the preview
-        if (towerPreviewInstance.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
-        if (towerPreviewInstance.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
-        if (towerPreviewInstance.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
-        RangeDetector detector = towerPreviewInstance.GetComponentInChildren<RangeDetector>();
-        if (detector != null) detector.enabled = false;
-    }
-
     void CheckForRepositionStart()
     {
         if (Mouse.current == null) return;
-
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, clickableLayer);
-
             if (hit.collider != null)
             {
                 TowerData data = null;
-                // Check for all tower types to get their data asset
                 if (hit.collider.TryGetComponent<Turret>(out Turret turret)) data = turret.towerData;
                 if (hit.collider.TryGetComponent<Mortar>(out Mortar mortar)) data = mortar.towerData;
                 if (hit.collider.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) data = flamethrower.towerData;
-
                 if (data != null)
                 {
                     StartRepositioning(hit.collider.gameObject, data.range);
@@ -94,10 +69,10 @@ public class BuildManager : MonoBehaviour
 
     void StartRepositioning(GameObject tower, float range)
     {
+        IsPlacingOrRepositioning = true;
         towerToReposition = tower;
         previewSpriteRenderer = towerToReposition.GetComponentInChildren<SpriteRenderer>();
         CreateRangePreview(range, towerToReposition.transform);
-        
         if (tower.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
         if (tower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
         if (tower.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
@@ -112,7 +87,6 @@ public class BuildManager : MonoBehaviour
         towerToReposition.transform.position = mousePosition;
         bool canPlace = IsValidPlacement(mousePosition);
         previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
-
         if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
         {
             FinalizeRepositioning();
@@ -121,6 +95,11 @@ public class BuildManager : MonoBehaviour
 
     void FinalizeRepositioning()
     {
+        // --- ADD THIS LINE ---
+        // Play the placement sound when the tower is placed back down.
+        SoundManager.instance.PlayTowerPlaceSound();
+        // --- END ADDITION ---
+
         if (towerToReposition.transform.childCount > 0)
         {
            foreach (Transform child in towerToReposition.transform) {
@@ -129,17 +108,31 @@ public class BuildManager : MonoBehaviour
                }
            }
         }
-                SoundManager.instance.PlayTowerPlaceSound();
-
         if (towerToReposition.TryGetComponent<Turret>(out Turret turret)) turret.enabled = true;
         if (towerToReposition.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = true;
         if (towerToReposition.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = true;
         RangeDetector detector = towerToReposition.GetComponentInChildren<RangeDetector>();
         if (detector != null) detector.enabled = true;
-
         previewSpriteRenderer.color = Color.white;
         towerToReposition = null;
         previewSpriteRenderer = null;
+        IsPlacingOrRepositioning = false;
+    }
+
+    public void SelectTowerToBuild(TowerData tower)
+    {
+        if (GameManager.instance.currency < tower.buildCost) return;
+        CancelActions();
+        IsPlacingOrRepositioning = true;
+        selectedTower = tower;
+        towerPreviewInstance = Instantiate(selectedTower.towerPrefab);
+        previewSpriteRenderer = towerPreviewInstance.GetComponentInChildren<SpriteRenderer>();
+        CreateRangePreview(tower.range, towerPreviewInstance.transform);
+        if (towerPreviewInstance.TryGetComponent<Turret>(out Turret turret)) turret.enabled = false;
+        if (towerPreviewInstance.TryGetComponent<Mortar>(out Mortar mortar)) mortar.enabled = false;
+        if (towerPreviewInstance.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.enabled = false;
+        RangeDetector detector = towerPreviewInstance.GetComponentInChildren<RangeDetector>();
+        if (detector != null) detector.enabled = false;
     }
 
     void HandleNewTowerPlacement()
@@ -149,7 +142,6 @@ public class BuildManager : MonoBehaviour
         towerPreviewInstance.transform.position = mousePosition;
         bool canPlace = IsValidPlacement(mousePosition);
         previewSpriteRenderer.color = canPlace ? new Color(0, 1, 0, 0.5f) : new Color(1, 0, 0, 0.5f);
-
         if (canPlace && Mouse.current.leftButton.wasPressedThisFrame)
         {
             PlaceTower(towerPreviewInstance.transform.position);
@@ -158,17 +150,13 @@ public class BuildManager : MonoBehaviour
 
     void PlaceTower(Vector3 position)
     {
-        
         SoundManager.instance.PlayTowerPlaceSound();
         GameManager.instance.SpendCurrency(selectedTower.buildCost);
         Destroy(towerPreviewInstance);
-        
         GameObject newTower = Instantiate(selectedTower.towerPrefab, position, Quaternion.identity);
-        // Pass the TowerData asset to the newly created tower
         if (newTower.TryGetComponent<Turret>(out Turret turret)) turret.towerData = selectedTower;
         if (newTower.TryGetComponent<Mortar>(out Mortar mortar)) mortar.towerData = selectedTower;
         if (newTower.TryGetComponent<Flamethrower>(out Flamethrower flamethrower)) flamethrower.towerData = selectedTower;
-        
         CancelActions();
     }
 
@@ -202,6 +190,7 @@ public class BuildManager : MonoBehaviour
             FinalizeRepositioning();
         }
         selectedTower = null;
+        IsPlacingOrRepositioning = false;
     }
 }
 

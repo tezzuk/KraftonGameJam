@@ -7,7 +7,7 @@ public class ThreadManager : MonoBehaviour
     public Camera mainCamera;
     public LayerMask clickableLayer;
 
-    // This will now hold a permanent reference to the single Time Crystal in the scene.
+    // This will hold a permanent reference to the single Time Crystal in the scene.
     private TimeCrystal timeCrystal;
 
     void Start()
@@ -27,17 +27,7 @@ public class ThreadManager : MonoBehaviour
 
     private void HandlePlayerInput()
     {
-        // --- Connection Logic (Only works during Build Phase) ---
-        if (GameManager.instance.currentState == GameManager.GameState.BuildPhase)
-        {
-            if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-            {
-                ProcessConnectionClick();
-            }
-        }
-
         // --- Rewind Activation Logic (Works ANY time) ---
-        // This now checks for the automatically found crystal.
         if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
         {
             if (timeCrystal != null)
@@ -49,6 +39,19 @@ public class ThreadManager : MonoBehaviour
             {
                 Debug.LogWarning("Rewind key ('R') pressed, but no Time Crystal was found in the scene.");
             }
+        }
+
+        // --- Connection Logic (Only works during Build Phase AND if BuildManager is idle) ---
+        if (GameManager.instance.currentState != GameManager.GameState.BuildPhase) return;
+
+        // --- THE FIX ---
+        // If the BuildManager is busy placing or repositioning a tower, ignore any clicks for thread connections.
+        if (BuildManager.instance.IsPlacingOrRepositioning) return;
+        // --- END FIX ---
+
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            ProcessConnectionClick();
         }
     }
 
@@ -65,7 +68,7 @@ public class ThreadManager : MonoBehaviour
 
         if (hit.collider != null)
         {
-            // We no longer need to select the crystal, so we only check for towers.
+            // We only check for towers since the crystal is found automatically.
             if (hit.collider.TryGetComponent<Turret>(out Turret turret))
             {
                 if (timeCrystal != null)
