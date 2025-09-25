@@ -19,7 +19,7 @@ MonoBehaviour:
   - upgradeCost: 0
     range: 5
     fireRate: 1.5
-    shotsUntilBreakdown: 150
+    shotsUntilBreakdown: 10
     projectileDamage: 4
     damagePerSecond: 0
     flameAngle: 0

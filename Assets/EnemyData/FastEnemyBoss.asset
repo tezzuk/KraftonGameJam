@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c64e5fdd0e42742832bf94703803d0, type: 3}
-  m_Name: FastEnemy
+  m_Name: FastEnemyBoss
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  enemyName: FastEnemy
-  enemyPrefab: {fileID: 4931856821903555792, guid: d3e821cc992683340a4051dff78437e2, type: 3}
-  health: 10
-  moveSpeed: 4
-  currencyOnDeath: 10
+  enemyName: FastEnemyBoss
+  enemyPrefab: {fileID: 1487844703943869895, guid: 83ca36951886e94488685e9a6c6f677c, type: 3}
+  health: 50
+  moveSpeed: 4.5
+  currencyOnDeath: 40

@@ -14,13 +14,15 @@ public class SoundManager : MonoBehaviour
     public AudioClip enemyDeathSound;
     public AudioClip towerPlaceSound;
     public AudioClip buttonClickSound; // <-- NEW: The sound for UI button clicks
-        public AudioClip threadConnectSound; 
+    public AudioClip threadConnectSound;
 
     [Header("Music Clips")]
     public AudioClip buildPhaseMusic;
     public AudioClip defensePhaseMusic;
-    public AudioClip rewindSound; 
+    public AudioClip rewindSound;
     public AudioClip crystalDamageSound;
+    public AudioClip flamethrowerLoopSound;
+    public AudioSource loopingSfxSource;
     void Awake()
     {
         // Set up the singleton pattern
@@ -35,7 +37,7 @@ public class SoundManager : MonoBehaviour
     }
 
     // --- Sound Effect Methods ---
- public void PlayCrystalDamageSound()
+    public void PlayCrystalDamageSound()
     {
         if (crystalDamageSound != null && sfxSource != null)
         {
@@ -47,7 +49,7 @@ public class SoundManager : MonoBehaviour
     {
         if (enemyHitSound != null && sfxSource != null)
         {
-            sfxSource.PlayOneShot(enemyHitSound , 3.0f);
+            sfxSource.PlayOneShot(enemyHitSound, 3.0f);
         }
     }
 
@@ -55,7 +57,7 @@ public class SoundManager : MonoBehaviour
     {
         if (enemyDeathSound != null && sfxSource != null)
         {
-            sfxSource.PlayOneShot(enemyDeathSound , 2.0f);
+            sfxSource.PlayOneShot(enemyDeathSound, 2.0f);
         }
     }
 
@@ -66,7 +68,7 @@ public class SoundManager : MonoBehaviour
             sfxSource.PlayOneShot(towerPlaceSound);
         }
     }
-  public void PlayRewindSound()
+    public void PlayRewindSound()
     {
         if (rewindSound != null && sfxSource != null)
         {
@@ -115,6 +117,26 @@ public class SoundManager : MonoBehaviour
             sfxSource.PlayOneShot(threadConnectSound);
         }
     }
+ public void PlayFlamethrowerSound()
+    {
+        if (loopingSfxSource != null && flamethrowerLoopSound != null)
+        {
+            // Assign the clip and play it only if it's not already playing
+            if (loopingSfxSource.clip == flamethrowerLoopSound && loopingSfxSource.isPlaying) return;
+            
+            loopingSfxSource.clip = flamethrowerLoopSound;
+            loopingSfxSource.Play();
+        }
+    }
+
+    public void StopFlamethrowerSound()
+    {
+        if (loopingSfxSource != null && loopingSfxSource.isPlaying)
+        {
+            loopingSfxSource.Stop();
+        }
+    }
+
 
 }
 

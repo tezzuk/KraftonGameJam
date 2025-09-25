@@ -231,6 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   projectilePrefab: {fileID: 8804762272596218422, guid: a43ea8be63742ed40bca06acada513d3, type: 3}
   firePoint: {fileID: 928483175792654404}
+  shotsUntilBreakdown: 3
   isBrokenDown: 0
 --- !u!61 &6515576573477623934
 BoxCollider2D:

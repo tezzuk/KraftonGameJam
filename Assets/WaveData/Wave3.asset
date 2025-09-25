@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 136f09e6e160cc44fab975e98f991fe9, type: 3}
-  m_Name: Wave2
+  m_Name: Wave3
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
   subWaves:
-  - enemyType: {fileID: 11400000, guid: 30b59157799666349ac1a37faf4b9f3c, type: 2}
-    count: 15
-    spawnInterval: 0.2
+  - enemyType: {fileID: 11400000, guid: 2a6d173a4977e6047aec491e8ee4ea92, type: 2}
+    count: 12
+    spawnInterval: 0.4
+  - enemyType: {fileID: 11400000, guid: 0da28594527b5f24dacbe256a87b3f7f, type: 2}
+    count: 13
+    spawnInterval: 0.5
   timeBetweenSubWaves: 2
