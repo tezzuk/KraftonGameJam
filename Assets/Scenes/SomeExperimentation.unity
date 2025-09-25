@@ -26855,6 +26855,7 @@ MonoBehaviour:
   buildPhaseMusic: {fileID: 8300000, guid: 9b98ba4b64b2c654a907e9475d052124, type: 3}
   defensePhaseMusic: {fileID: 8300000, guid: 1ee1ce15dc97d1b4ebd88660f33cfe10, type: 3}
   rewindSound: {fileID: 8300000, guid: c6419e2ca2e0d984a9e497b00557aeed, type: 3}
+  crystalDamageSound: {fileID: 8300000, guid: ad02eb12e42dc06488ddb5e913acbf91, type: 3}
 --- !u!4 &2092801035
 Transform:
   m_ObjectHideFlags: 0

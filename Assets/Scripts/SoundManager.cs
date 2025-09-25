@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip buildPhaseMusic;
     public AudioClip defensePhaseMusic;
     public AudioClip rewindSound; 
-
+    public AudioClip crystalDamageSound;
     void Awake()
     {
         // Set up the singleton pattern
@@ -35,6 +35,13 @@ public class SoundManager : MonoBehaviour
     }
 
     // --- Sound Effect Methods ---
+ public void PlayCrystalDamageSound()
+    {
+        if (crystalDamageSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(crystalDamageSound);
+        }
+    }
 
     public void PlayEnemyHitSound()
     {
